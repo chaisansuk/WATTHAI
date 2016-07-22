@@ -32,6 +32,10 @@ public class WatbukkarowActivity extends Activity {
             public void onClick(View view) {
                 // Launching Screen
                 Intent i = new Intent(getApplicationContext(), MapsActivity.class);
+                i.putExtra("Lat", 13.718941);
+                i.putExtra("Lng", 100.479304);
+                i.putExtra("Title", "วัดบุคคโล");
+                i.putExtra("Detail", "วัดราษฏร์, 13.699800, 100.488770");
                 startActivity(i);
             }
         });

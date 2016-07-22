@@ -37,23 +37,15 @@
                     android:layout_marginTop="80dp"
                     android:layout_marginLeft="56dp"
                     android:orientation="vertical">
-                <Button
-                    android:id="@+id/btn_map1"
-                    android:text="Map"
-                    android:textSize="@dimen/h1"
-                    android:layout_width="250dp"
-                    android:layout_height="100dp"
-                    android:layout_row="0"
-                    android:layout_column="0" />
 
-                <Button
+                    <Button
                     android:id="@+id/btn_wat"
                     android:text="WAT"
                     android:textSize="@dimen/h1"
                     android:layout_width="250dp"
                     android:layout_height="100dp"
                     android:layout_marginTop="40dp"
-                    android:layout_row="1"
+                    android:layout_row="0"
                     android:layout_column="0"
                     />
 
@@ -64,7 +56,7 @@
                     android:layout_width="250dp"
                     android:layout_height="100dp"
                     android:layout_marginTop="40dp"
-                    android:layout_row="2"
+                    android:layout_row="1"
                     android:layout_column="0"
                             />
                 </GridLayout>

@@ -32,6 +32,10 @@ public class WatbangsachaenorkActivity extends Activity {
             public void onClick(View view) {
                 // Launching Screen
                 Intent i = new Intent(getApplicationContext(), MapsActivity.class);
+                i.putExtra("Lat", 13.717944);
+                i.putExtra("Lng", 100.474997);
+                i.putExtra("Title", "วัดบางสะแกนอก");
+                i.putExtra("Detail", "วัดราษฏร์, 13.717944, 100.474997");
                 startActivity(i);
             }
         });

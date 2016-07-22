@@ -32,6 +32,10 @@ public class WatphadittharramActivity extends Activity {
             public void onClick(View view) {
                 // Launching Screen
                 Intent i = new Intent(getApplicationContext(), MapsActivity.class);
+                i.putExtra("Lat", 13.718941);
+                i.putExtra("Lng", 100.479304);
+                i.putExtra("Title", "วัดประดิษฐาราม");
+                i.putExtra("Detail", "วัดราษฏร์, 13.734278, 100.488092");
                 startActivity(i);
             }
         });

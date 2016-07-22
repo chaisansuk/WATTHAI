@@ -121,18 +121,10 @@
                 android:textStyle="bold"/>
         </RelativeLayout>
     </LinearLayout>
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-    <Spinner
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/spinner"
-        style="@android:style/Widget.Spinner" />
-</RelativeLayout>
+
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="310dp">
+        android:layout_height="350dp">
         <fragment
             xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"

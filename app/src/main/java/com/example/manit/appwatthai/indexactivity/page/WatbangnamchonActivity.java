@@ -32,6 +32,10 @@ public class WatbangnamchonActivity extends Activity {
             public void onClick(View view) {
                 // Launching Screen
                 Intent i = new Intent(getApplicationContext(), MapsActivity.class);
+                i.putExtra("Lat", 13.704214);
+                i.putExtra("Lng", 100.490526);
+                i.putExtra("Title", "วัดบางน้ำชน");
+                i.putExtra("Detail", "วัดราษฏร์,13.704214, 100.490526");
                 startActivity(i);
             }
         });

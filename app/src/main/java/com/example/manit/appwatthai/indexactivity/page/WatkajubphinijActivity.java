@@ -32,10 +32,13 @@ public class WatkajubphinijActivity extends Activity {
             public void onClick(View view) {
                 // Launching Screen
                 Intent i = new Intent(getApplicationContext(), MapsActivity.class);
+                i.putExtra("Lat", 13.715359);
+                i.putExtra("Lng", 100.486108);
+                i.putExtra("Title", "วัดกระจับพินิจ");
+                i.putExtra("Detail", "วัดราษฏร์,13.715359, 100.486108");
                 startActivity(i);
             }
         });
-
 
         back.setOnClickListener(new View.OnClickListener() {
 

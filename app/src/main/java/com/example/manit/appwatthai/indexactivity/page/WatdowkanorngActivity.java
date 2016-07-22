@@ -31,6 +31,10 @@ public class WatdowkanorngActivity extends Activity {
             public void onClick(View view) {
                 // Launching Screen
                 Intent i = new Intent(getApplicationContext(), MapsActivity.class);
+                i.putExtra("Lat", 13.695921);
+                i.putExtra("Lng", 100.488491);
+                i.putExtra("Title", "วัดดาวคนอง");
+                i.putExtra("Detail", "วัดราษฏร์, 13.695921, 100.488491");
                 startActivity(i);
             }
         });

@@ -32,6 +32,10 @@ public class WatsuttharwharsActivity extends Activity {
             public void onClick(View view) {
                 // Launching Screen
                 Intent i = new Intent(getApplicationContext(), MapsActivity.class);
+                i.putExtra("Lat", 13.707980);
+                i.putExtra("Lng", 100.482146);
+                i.putExtra("Title", "วัดสุทธาวาส");
+                i.putExtra("Detail", "วัดราษฏร์, 13.707980, 100.482146");
                 startActivity(i);
             }
         });

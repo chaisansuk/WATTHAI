@@ -31,6 +31,10 @@ public class WatkrangdowActivity extends Activity {
             public void onClick(View view) {
                 // Launching Screen
                 Intent i = new Intent(getApplicationContext(), MapsActivity.class);
+                i.putExtra("Lat", 13.696599);
+                i.putExtra("Lng", 100.488186);
+                i.putExtra("Title", "วัดกลางดาวคนอง");
+                i.putExtra("Detail", "วัดราษฏร์,13.696599, 100.488186");
                 startActivity(i);
             }
         });

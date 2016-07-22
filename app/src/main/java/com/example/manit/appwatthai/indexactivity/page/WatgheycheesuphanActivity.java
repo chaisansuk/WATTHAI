@@ -32,6 +32,10 @@ public class WatgheycheesuphanActivity extends Activity {
             public void onClick(View view) {
                 // Launching Screen
                 Intent i = new Intent(getApplicationContext(), MapsActivity.class);
+                i.putExtra("Lat", 13.719178);
+                i.putExtra("Lng", 100.485974);
+                i.putExtra("Title", "วัดใหญ่ศรีสุพรรณ");
+                i.putExtra("Detail", "วัดราษฏร์,13.719178, 100.485974");
                 startActivity(i);
             }
         });

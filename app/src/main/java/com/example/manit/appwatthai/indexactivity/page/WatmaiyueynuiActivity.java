@@ -31,6 +31,10 @@ public class WatmaiyueynuiActivity extends Activity {
             public void onClick(View view) {
                 // Launching Screen
                 Intent i = new Intent(getApplicationContext(), MapsActivity.class);
+                i.putExtra("Lat", 13.711961);
+                i.putExtra("Lng", 100.468449);
+                i.putExtra("Title", "วัดใหม่ยายนุ้ย");
+                i.putExtra("Detail", "วัดราษฏร์, 13.711961, 100.468449");
                 startActivity(i);
             }
         });

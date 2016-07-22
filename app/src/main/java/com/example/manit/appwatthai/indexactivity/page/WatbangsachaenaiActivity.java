@@ -33,6 +33,10 @@ public class WatbangsachaenaiActivity extends Activity {
             public void onClick(View view) {
                 // Launching Screen
                 Intent i = new Intent(getApplicationContext(), MapsActivity.class);
+                i.putExtra("Lat", 13.711757);
+                i.putExtra("Lng", 100.475893);
+                i.putExtra("Title", "วัดบางสะแกใน");
+                i.putExtra("Detail", "วัดราษฏร์, 13.711757, 100.475893");
                 startActivity(i);
             }
         });

@@ -31,6 +31,10 @@ public class WatrajwarinActivity extends Activity {
             public void onClick(View view) {
                 // Launching Screen
                 Intent i = new Intent(getApplicationContext(), MapsActivity.class);
+                i.putExtra("Lat", 13.708958);
+                i.putExtra("Lng", 100.491758);
+                i.putExtra("Title", "วัดราชวรินทร์");
+                i.putExtra("Detail", "วัดราษฏร์, 13.708958, 100.491758");
                 startActivity(i);
             }
         });

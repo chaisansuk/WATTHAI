@@ -32,6 +32,10 @@ public class WatsantithammararmActivity extends Activity {
             public void onClick(View view) {
                 // Launching Screen
                 Intent i = new Intent(getApplicationContext(), MapsActivity.class);
+                i.putExtra("Lat", 13.706977);
+                i.putExtra("Lng", 100.488643);
+                i.putExtra("Title", "วัดสันติธรรมาราม");
+                i.putExtra("Detail", "วัดราษฏร์, 13.706977, 100.488643");
                 startActivity(i);
             }
         });

@@ -31,6 +31,10 @@ public class WatwararmartayaphanthasarrararmActivity extends Activity {
             public void onClick(View view) {
                 // Launching Screen
                 Intent i = new Intent(getApplicationContext(), MapsActivity.class);
+                i.putExtra("Lat", 13.719772);
+                i.putExtra("Lng", 100.470898);
+                i.putExtra("Title", "วัดวรามาตยภัณฑสาราราม");
+                i.putExtra("Detail", "วัดราษฏร์, 13.719772, 100.470898");
                 startActivity(i);
             }
         });

@@ -34,6 +34,10 @@ public class WatbangsaikaiActivity extends Activity {
             public void onClick(View view) {
                 // Launching Screen
                 Intent i = new Intent(getApplicationContext(), MapsActivity.class);
+                i.putExtra("Lat", 13.732347);
+                i.putExtra("Lng", 100.489228);
+                i.putExtra("Title", "วัดบางไส้ไก่");
+                i.putExtra("Detail", "วัดราษฏร์,13.732347, 100.489228");
                 startActivity(i);
             }
         });

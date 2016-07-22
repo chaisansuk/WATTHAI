@@ -31,7 +31,7 @@ public class WatkanthatarararmActivity extends Activity {
             @Override
             public void onClick(View view) {
                 // Launching Screen
-                Intent i = new Intent(getApplicationContext(), WatkanthatarararmActivity.class);
+                Intent i = new Intent(getApplicationContext(), MapsActivity.class);
                 startActivity(i);
             }
         });

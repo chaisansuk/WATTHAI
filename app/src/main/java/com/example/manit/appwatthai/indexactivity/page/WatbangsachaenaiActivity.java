@@ -32,7 +32,7 @@ public class WatbangsachaenaiActivity extends Activity {
             @Override
             public void onClick(View view) {
                 // Launching Screen
-                Intent i = new Intent(getApplicationContext(), WatbangsachaenaiActivity.class);
+                Intent i = new Intent(getApplicationContext(), MapsActivity.class);
                 startActivity(i);
             }
         });

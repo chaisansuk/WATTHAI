@@ -30,7 +30,7 @@ public class WatdowkanorngActivity extends Activity {
             @Override
             public void onClick(View view) {
                 // Launching Screen
-                Intent i = new Intent(getApplicationContext(), WatdowkanorngActivity.class);
+                Intent i = new Intent(getApplicationContext(), MapsActivity.class);
                 startActivity(i);
             }
         });

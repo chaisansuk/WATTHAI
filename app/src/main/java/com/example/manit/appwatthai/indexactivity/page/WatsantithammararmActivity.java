@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.example.manit.appwatthai.R;
 import com.example.manit.appwatthai.indexactivity.map.MapsActivity;
@@ -16,11 +17,24 @@ public class WatsantithammararmActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.watsantithammararm_layout);
-        Button back = (Button) findViewById(R.id.back);
+        ImageButton back = (ImageButton) findViewById(R.id.back);
+        ImageButton btn_location13 = (ImageButton) findViewById(R.id.btn_location13);
 
-        WebView webView = (WebView) findViewById(R.id.webViewn6);
+
+        WebView webView = (WebView) findViewById(R.id.webViewn13);
         webView.getSettings().setJavaScriptEnabled(true);
-        webView.loadUrl("http://watthaiapp.6te.net/watbangnamchon.html");
+        webView.loadUrl("http://watthaiapp.6te.net/watsantitummaram.html");
+
+        //Go to location pagemap
+        btn_location13.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                // Launching Screen
+                Intent i = new Intent(getApplicationContext(), WatsantithammararmActivity.class);
+                startActivity(i);
+            }
+        });
 
         back.setOnClickListener(new View.OnClickListener() {
 

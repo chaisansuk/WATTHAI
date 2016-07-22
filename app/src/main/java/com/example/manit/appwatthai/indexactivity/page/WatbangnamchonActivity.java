@@ -19,19 +19,19 @@ public class WatbangnamchonActivity extends Activity {
         setContentView(R.layout.watbangnamchon_layout);
 
         ImageButton back = (ImageButton) findViewById(R.id.back);
-        ImageButton btn_location0 = (ImageButton) findViewById(R.id.btn_location0);
+        ImageButton btn_location6 = (ImageButton) findViewById(R.id.btn_location6);
 
         WebView webView = (WebView) findViewById(R.id.webViewn6);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl("http://watthaiapp.6te.net/watbangnamchon.html");
 
         //Go to location pagemap
-        btn_location0.setOnClickListener(new View.OnClickListener() {
+        btn_location6.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 // Launching Screen
-                Intent i = new Intent(getApplicationContext(), WatgheycheesuphanActivity.class);
+                Intent i = new Intent(getApplicationContext(), WatbangnamchonActivity.class);
                 startActivity(i);
             }
         });

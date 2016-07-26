@@ -53,6 +53,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         //Setup location
         setUpLocation();
 
+
     } // Main Method
 
 
@@ -152,16 +153,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     }//Bindwidget
 
-  //  public void clickStartSearchAct(View view) {
-
-  //      String lat = ""; // ละติจูดสมมุติ
-  //      String lng = "";  // ลองจิจูดสมมุติ
-  //      String strUri = "http://maps.google.com/maps?q=loc:" + lat + "," + lng + " (" + "" + ")";
- //       Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(strUri));
- //       intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
-
- //       startActivity(intent);
-//    } //clickStart
 
     public void onZoom(View view) {
         if (view.getId() == R.id.Bzoomin) {
@@ -193,7 +184,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private void setUpMap() {
         mMap.setMyLocationEnabled(true);
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(13.716630, 100.487487),12));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(13.716630, 100.487487),16));
 
         //create marker
         double douLat = getIntent().getDoubleExtra("Lat", 13.716630);

@@ -14,7 +14,7 @@
             android:id="@+id/back"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:background="@android:drawable/ic_menu_revert" />
+            android:background="@drawable/ic_backspace_orange_50_18dp" />
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
@@ -50,8 +50,5 @@
         </LinearLayout>
     </ScrollView>
 
-    <ImageSwitcher
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageSwitcher" />
+
 </LinearLayout>

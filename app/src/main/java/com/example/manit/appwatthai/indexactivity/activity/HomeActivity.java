@@ -1,10 +1,10 @@
 package com.example.manit.appwatthai.indexactivity.activity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TabHost;
 import android.widget.TabWidget;
@@ -86,18 +86,7 @@ public class HomeActivity extends AppCompatActivity {
         ImageButton btn_watsuttharwhars = (ImageButton) findViewById(R.id.btn_watsuttharwhars);
         ImageButton btn_watmaiyueynui= (ImageButton) findViewById(R.id.btn_watmaiyueynui);
 
-        //phaaramluang
-        ImageButton btn_watbuppharhrm = (ImageButton) findViewById(R.id.btn_watbuppharhrm);
-        ImageButton btn_watkanrayanamit = (ImageButton) findViewById(R.id.btn_watkanrayanamit);
-        ImageButton btn_wathiranruge = (ImageButton) findViewById(R.id.btn_wathiranruge);
-        ImageButton btn_watjantarrarmvoraviharn = (ImageButton) findViewById(R.id.btn_watjantarrarmvoraviharn);
-        ImageButton btn_watprayutrawongsarvarsvoraviharn = (ImageButton) findViewById(R.id.btn_watprayutrawongsarvarsvoraviharn);
-        ImageButton btn_watphonimitsatitmaharsremararm = (ImageButton) findViewById(R.id.btn_watphonimitsatitmaharsremararm);
-        ImageButton btn_watrajakruvoraviharn = (ImageButton) findViewById(R.id.btn_watrajakruvoraviharn);
-        ImageButton btn_watweyrurachin = (ImageButton) findViewById(R.id.btn_watweyrurachin);
-        ImageButton btn_watintararmvoraviharn = (ImageButton) findViewById(R.id.btn_watintararmvoraviharn);
-
-        //clicktomapwatrat
+        //click to map watrat
         ImageButton btn_watgheycheesuphanmap = (ImageButton) findViewById(R.id.btn_watgheycheesuphanmap);
         ImageButton btn_watbangsaikaimap = (ImageButton) findViewById(R.id.btn_watbangsaikaimap);
         ImageButton btn_watkajubphinijmap = (ImageButton) findViewById(R.id.btn_watkajubphinijmap);
@@ -114,6 +103,182 @@ public class HomeActivity extends AppCompatActivity {
         ImageButton btn_watsantithammararmmap = (ImageButton) findViewById(R.id.btn_watsantithammararmmap);
         ImageButton btn_watsuttharwharsmap = (ImageButton) findViewById(R.id.btn_watsuttharwharsmap);
         ImageButton btn_watmaiyueynuimap = (ImageButton) findViewById(R.id.btn_watmaiyueynuimap);
+
+        //click to navi watrat
+        ImageButton btn_watgheycheesuphanmaplocation = (ImageButton) findViewById(R.id.btn_watgheycheesuphanmaplocation);
+        ImageButton btn_watbangsaikaimaplocation = (ImageButton) findViewById(R.id.btn_watbangsaikaimaplocation);
+        ImageButton btn_watkajubphinijmaplocation = (ImageButton) findViewById(R.id.btn_watkajubphinijmaplocation);
+        ImageButton btn_watkrangdowmaplocation = (ImageButton) findViewById(R.id.btn_watkrangdowmaplocation);
+        ImageButton btn_watkanthatarararmmaplocation = (ImageButton) findViewById(R.id.btn_watkanthatarararmmaplocation);
+        ImageButton btn_watdowkanorngmaplocation = (ImageButton) findViewById(R.id.btn_watdowkanorngmaplocation);
+        ImageButton btn_watbangnamchonmaplocation = (ImageButton) findViewById(R.id.btn_watbangnamchonmaplocation);
+        ImageButton btn_watbangsachaenorkmaplocation = (ImageButton) findViewById(R.id.btn_watbangsachaenorkmaplocation);
+        ImageButton btn_watbangsachaenaimaplocation = (ImageButton) findViewById(R.id.btn_watbangsachaenaimaplocation);
+        ImageButton btn_watbukkarowmaplocation = (ImageButton) findViewById(R.id.btn_watbukkarowmaplocation);
+        ImageButton btn_watphadittharrammaplocation = (ImageButton) findViewById(R.id.btn_watphadittharrammaplocation);
+        ImageButton btn_watrajwarinmaplocation = (ImageButton) findViewById(R.id.btn_watrajwarinmaplocation);
+        ImageButton btn_watwararmartayaphanthasarrararmmaplocation = (ImageButton) findViewById(R.id.btn_watwararmartayaphanthasarrararmmaplocation);
+        ImageButton btn_watsantithammararmmaplocation = (ImageButton) findViewById(R.id.btn_watsantithammararmmaplocation);
+        ImageButton btn_watsuttharwharsmaplocation = (ImageButton) findViewById(R.id.btn_watsuttharwharsmaplocation);
+        ImageButton btn_watmaiyueynuimaplocation = (ImageButton) findViewById(R.id.btn_watmaiyueynuimaplocation);
+
+        //phaaramluang
+        ImageButton btn_watbuppharhrm = (ImageButton) findViewById(R.id.btn_watbuppharhrm);
+        ImageButton btn_watkanrayanamit = (ImageButton) findViewById(R.id.btn_watkanrayanamit);
+        ImageButton btn_wathiranruge = (ImageButton) findViewById(R.id.btn_wathiranruge);
+        ImageButton btn_watjantarrarmvoraviharn = (ImageButton) findViewById(R.id.btn_watjantarrarmvoraviharn);
+        ImageButton btn_watprayutrawongsarvarsvoraviharn = (ImageButton) findViewById(R.id.btn_watprayutrawongsarvarsvoraviharn);
+        ImageButton btn_watphonimitsatitmaharsremararm = (ImageButton) findViewById(R.id.btn_watphonimitsatitmaharsremararm);
+        ImageButton btn_watrajakruvoraviharn = (ImageButton) findViewById(R.id.btn_watrajakruvoraviharn);
+        ImageButton btn_watweyrurachin = (ImageButton) findViewById(R.id.btn_watweyrurachin);
+        ImageButton btn_watintararmvoraviharn = (ImageButton) findViewById(R.id.btn_watintararmvoraviharn);
+
+        //click watratdetail
+        btn_watgheycheesuphan.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                // Launching Screen
+                Intent i = new Intent(getApplicationContext(), WatgheycheesuphanActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btn_watbangsaikai.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), WatbangsaikaiActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btn_watkajubphinij.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), WatkajubphinijActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btn_watkrangdow.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), WatkrangdowActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btn_watkanthatarararm.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), WatkanthatarararmActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btn_watdowkanorng.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), WatdowkanorngActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btn_watbangnamchon.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), WatbangnamchonActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btn_watbangsachaenork.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), WatbangsachaenorkActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btn_watbangsachaenai.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), WatbangsachaenaiActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btn_watbukkarow.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), WatbukkarowActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btn_watphadittharram.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), WatphadittharramActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btn_watrajwarin.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), WatrajwarinActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btn_watwararmartayaphanthasarrararm.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), WatwararmartayaphanthasarrararmActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btn_watsantithammararm.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), WatsantithammararmActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btn_watsuttharwhars.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), WatsuttharwharsActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btn_watmaiyueynui.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), WatmaiyueynuiActivity.class);
+                startActivity(i);
+            }
+        });
+        //end clickwatratdetail
 
         //Start click Go to location pagemap watrat
         btn_watgheycheesuphanmap.setOnClickListener(new View.OnClickListener() {
@@ -310,155 +475,199 @@ public class HomeActivity extends AppCompatActivity {
         });
         //End click Go to location pagemap watrat
 
-        //Start click Go to location pagemap phaaramluang
-        //End click Go to location pagemap phaaramluang
-
-        //click watratdetail
-        btn_watgheycheesuphan.setOnClickListener(new View.OnClickListener() {
+        //Start click Go to navi watrat
+        btn_watgheycheesuphanmaplocation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String lat = "13.719178";
+                String lng = "100.485974";
+                String strUri = "http://maps.google.com/maps?q=loc:" + lat + "," + lng + " (" + "วัดใหญ่ศรีสุพรรณ" + ")";
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(strUri));
+                intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                startActivity(intent);
+            }
+        });
+        btn_watbangsaikaimaplocation.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                // Launching Screen
-                Intent i = new Intent(getApplicationContext(), WatgheycheesuphanActivity.class);
-                startActivity(i);
+                String lat = "13.732347";
+                String lng = "100.489228";
+                String strUri = "http://maps.google.com/maps?q=loc:" + lat + "," + lng + " (" + "วัดบางไส้ไก่" + ")";
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(strUri));
+                intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                startActivity(intent);
             }
         });
-
-        btn_watbangsaikai.setOnClickListener(new View.OnClickListener() {
+        btn_watkajubphinijmaplocation.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), WatbangsaikaiActivity.class);
-                startActivity(i);
+                String lat = "13.715359";
+                String lng = "100.486108";
+                String strUri = "http://maps.google.com/maps?q=loc:" + lat + "," + lng + " (" + "วัดกระจับพินิจ" + ")";
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(strUri));
+                intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                startActivity(intent);
             }
         });
-
-        btn_watkajubphinij.setOnClickListener(new View.OnClickListener() {
+        btn_watkrangdowmaplocation.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), WatkajubphinijActivity.class);
-                startActivity(i);
+                String lat = "13.696599";
+                String lng = "100.488186";
+                String strUri = "http://maps.google.com/maps?q=loc:" + lat + "," + lng + " (" + "วัดกลางดาวคนอง" + ")";
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(strUri));
+                intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                startActivity(intent);
             }
         });
-
-        btn_watkrangdow.setOnClickListener(new View.OnClickListener() {
+        btn_watkanthatarararmmaplocation.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), WatkrangdowActivity.class);
-                startActivity(i);
+                String lat = "13.718941";
+                String lng = "100.479304";
+                String strUri = "http://maps.google.com/maps?q=loc:" + lat + "," + lng + " (" + "วัดกันตทาราราม" + ")";
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(strUri));
+                intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                startActivity(intent);
             }
         });
-
-        btn_watkanthatarararm.setOnClickListener(new View.OnClickListener() {
+        btn_watdowkanorngmaplocation.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), WatkanthatarararmActivity.class);
-                startActivity(i);
+                String lat = "13.695921";
+                String lng = "100.488491";
+                String strUri = "http://maps.google.com/maps?q=loc:" + lat + "," + lng + " (" + "วัดดาวคนอง" + ")";
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(strUri));
+                intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                startActivity(intent);
             }
         });
-
-        btn_watdowkanorng.setOnClickListener(new View.OnClickListener() {
+        btn_watbangnamchonmaplocation.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), WatdowkanorngActivity.class);
-                startActivity(i);
+                String lat = "13.704214";
+                String lng = "100.490526";
+                String strUri = "http://maps.google.com/maps?q=loc:" + lat + "," + lng + " (" + "วัดบางน้ำชน" + ")";
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(strUri));
+                intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                startActivity(intent);
             }
         });
-
-        btn_watbangnamchon.setOnClickListener(new View.OnClickListener() {
+        btn_watbangsachaenorkmaplocation.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), WatbangnamchonActivity.class);
-                startActivity(i);
+                String lat = "13.717944";
+                String lng = "100.474997";
+                String strUri = "http://maps.google.com/maps?q=loc:" + lat + "," + lng + " (" + "วัดบางสะแกนอก" + ")";
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(strUri));
+                intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                startActivity(intent);
             }
         });
-
-        btn_watbangsachaenork.setOnClickListener(new View.OnClickListener() {
+        btn_watbangsachaenaimaplocation.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), WatbangsachaenorkActivity.class);
-                startActivity(i);
+                String lat = "13.711757";
+                String lng = "100.475893";
+                String strUri = "http://maps.google.com/maps?q=loc:" + lat + "," + lng + " (" + "วัดบางสะแกใน" + ")";
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(strUri));
+                intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                startActivity(intent);
             }
         });
-
-        btn_watbangsachaenai.setOnClickListener(new View.OnClickListener() {
+        btn_watbukkarowmaplocation.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), WatbangsachaenaiActivity.class);
-                startActivity(i);
+                String lat = "13.699800";
+                String lng = "100.488770";
+                String strUri = "http://maps.google.com/maps?q=loc:" + lat + "," + lng + " (" + "วัดบุคคโล" + ")";
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(strUri));
+                intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                startActivity(intent);
             }
         });
-
-        btn_watbukkarow.setOnClickListener(new View.OnClickListener() {
+        btn_watphadittharrammaplocation.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), WatbukkarowActivity.class);
-                startActivity(i);
+                String lat = "13.734278";
+                String lng = "100.488092";
+                String strUri = "http://maps.google.com/maps?q=loc:" + lat + "," + lng + " (" + "วัดประดิษฐาราม" + ")";
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(strUri));
+                intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                startActivity(intent);
             }
         });
-
-        btn_watphadittharram.setOnClickListener(new View.OnClickListener() {
+        btn_watrajwarinmaplocation.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), WatphadittharramActivity.class);
-                startActivity(i);
+                String lat = "13.708958";
+                String lng = "100.491758";
+                String strUri = "http://maps.google.com/maps?q=loc:" + lat + "," + lng + " (" + "วัดราชวรินทร์" + ")";
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(strUri));
+                intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                startActivity(intent);
             }
         });
-
-        btn_watrajwarin.setOnClickListener(new View.OnClickListener() {
+        btn_watwararmartayaphanthasarrararmmaplocation.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), WatrajwarinActivity.class);
-                startActivity(i);
+                String lat = "13.719772";
+                String lng = "100.470898";
+                String strUri = "http://maps.google.com/maps?q=loc:" + lat + "," + lng + " (" + "วัดวรามาตยภัณฑสาราราม" + ")";
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(strUri));
+                intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                startActivity(intent);
             }
         });
-
-        btn_watwararmartayaphanthasarrararm.setOnClickListener(new View.OnClickListener() {
+        btn_watsantithammararmmaplocation.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), WatwararmartayaphanthasarrararmActivity.class);
-                startActivity(i);
+                String lat = "13.706977";
+                String lng = "100.488643";
+                String strUri = "http://maps.google.com/maps?q=loc:" + lat + "," + lng + " (" + "วัดสันติธรรมาราม" + ")";
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(strUri));
+                intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                startActivity(intent);
             }
         });
-
-        btn_watsantithammararm.setOnClickListener(new View.OnClickListener() {
+        btn_watsuttharwharsmaplocation.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), WatsantithammararmActivity.class);
-                startActivity(i);
+                String lat = "13.707980";
+                String lng = "100.482146";
+                String strUri = "http://maps.google.com/maps?q=loc:" + lat + "," + lng + " (" + "วัดสุทธาวาส" + ")";
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(strUri));
+                intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                startActivity(intent);
             }
         });
-
-        btn_watsuttharwhars.setOnClickListener(new View.OnClickListener() {
+        btn_watmaiyueynuimaplocation.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), WatsuttharwharsActivity.class);
-                startActivity(i);
+                String lat = "13.711961";
+                String lng = "100.468449";
+                String strUri = "http://maps.google.com/maps?q=loc:" + lat + "," + lng + " (" + "วัดใหม่ยายนุ้ย" + ")";
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(strUri));
+                intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                startActivity(intent);
             }
         });
-
-        btn_watmaiyueynui.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), WatmaiyueynuiActivity.class);
-                startActivity(i);
-            }
-        });
-        //end clickwatratdetail
+        //End click Go to navi watrat
 
         //click phaaramluangdetail
         btn_watbuppharhrm.setOnClickListener(new View.OnClickListener() {
@@ -542,5 +751,11 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
         //end clickphaaramluangdetail
+
+        //Start click Go to location pagemap phaaramluang
+        //End click Go to location pagemap phaaramluang
+
+        //Start click Go to navi watrat
+        //End click Go to navi watrat
     }
 }//main

@@ -19,26 +19,12 @@ public class WatbangnamchonActivity extends Activity {
         setContentView(R.layout.watbangnamchon_layout);
 
         ImageButton back = (ImageButton) findViewById(R.id.back);
-        ImageButton btn_location6 = (ImageButton) findViewById(R.id.btn_location6);
+
 
         WebView webView = (WebView) findViewById(R.id.webViewn6);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl("http://watthaiapp.6te.net/watbangnamchon.html");
 
-        //Go to location pagemap
-        btn_location6.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                // Launching Screen
-                Intent i = new Intent(getApplicationContext(), MapsActivity.class);
-                i.putExtra("Lat", 13.704214);
-                i.putExtra("Lng", 100.490526);
-                i.putExtra("Title", "วัดบางน้ำชน");
-                i.putExtra("Detail", "วัดราษฏร์,13.704214, 100.490526");
-                startActivity(i);
-            }
-        });
 
         back.setOnClickListener(new View.OnClickListener() {
 

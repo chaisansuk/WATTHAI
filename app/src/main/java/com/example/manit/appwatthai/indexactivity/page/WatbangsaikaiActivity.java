@@ -21,27 +21,11 @@ public class WatbangsaikaiActivity extends Activity {
         setContentView(R.layout.watbangsaikai_layout);
 
         ImageButton back = (ImageButton) findViewById(R.id.back);
-        ImageButton btn_location1 = (ImageButton) findViewById(R.id.btn_location1);
+
 
         WebView webView = (WebView) findViewById(R.id.webViewn1);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl("http://watthaiapp.6te.net/watbangsaikai.html");
-
-        //Go to location pagemap
-        btn_location1.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                // Launching Screen
-                Intent i = new Intent(getApplicationContext(), MapsActivity.class);
-                i.putExtra("Lat", 13.732347);
-                i.putExtra("Lng", 100.489228);
-                i.putExtra("Title", "วัดบางไส้ไก่");
-                i.putExtra("Detail", "วัดราษฏร์,13.732347, 100.489228");
-                startActivity(i);
-            }
-        });
-
 
 
         back.setOnClickListener(new View.OnClickListener() {
@@ -51,8 +35,6 @@ public class WatbangsaikaiActivity extends Activity {
                 finish();
             }
         });
-
-
 
     }
 }

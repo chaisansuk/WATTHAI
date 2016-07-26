@@ -4,13 +4,13 @@
     android:id="@+id/tabhost"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    tools:context=".indexactivity.activity.HomeActivity">
+    tools:context=".indexactivity.activity.HomeActivity"
+    android:background="#a59464">
     <RelativeLayout
         android:id="@+id/relativeLayout1"
         android:layout_width="fill_parent"
         android:layout_height="40dp"
         android:background="#d2be85" >
-
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
@@ -33,20 +33,21 @@
         android:layout_height="fill_parent"
         android:layout_marginTop="40dp"
         android:orientation="vertical"
-        android:background="#d2be85">
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp">
         <TabWidget
         android:id="@android:id/tabs"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="0dp"
-            android:background="@android:color/background_light">
+        android:layout_marginTop="5dp"
+        android:background="#d2be85">
           </TabWidget>
         <FrameLayout
             android:id="@android:id/tabcontent"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_marginTop="5dp"
-            android:layout_weight="1" >
+            android:layout_marginBottom="5dp">
 
             <LinearLayout
                 android:id="@+id/watrat"
@@ -58,273 +59,448 @@
                     android:layout_height="match_parent"
                     android:id="@+id/scrollView2">
 
-                        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        <GridLayout
+                            xmlns:android="http://schemas.android.com/apk/res/android"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
                             <ImageButton
-                            android:id="@+id/btn_watgheycheesuphan"
-                            android:background="@drawable/n0"
-                            android:layout_width="250dp"
-                            android:layout_height="100dp"
-                            android:layout_row="0"
-                            android:layout_column="0"/>
+                                android:id="@+id/btn_watgheycheesuphan"
+                                android:src="@drawable/bg_listview_gr_wh"
+                                android:layout_width="320dp"
+                                android:layout_height="100dp"
+                                android:layout_row="0"
+                                android:layout_column="0"/>
                             <ImageButton
                                 android:id="@+id/btn_watgheycheesuphanmap"
-                                android:background="@android:drawable/ic_menu_mylocation"
-                                android:layout_marginTop="15dp"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                            />
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="3dp"
+                                android:layout_row="0"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
+                            <ImageButton
+                                android:id="@+id/btn_watgheycheesuphanmaplocation"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="47dp"
+                                android:layout_row="0"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
 
                             <ImageButton
                                 android:id="@+id/btn_watbangsaikai"
-                                android:background="@drawable/n1"
-                                android:layout_width="250dp"
+                                android:src="@drawable/bg_listview_gr_wh"
+                                android:layout_width="320dp"
                                 android:layout_height="100dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_row="1"
-                                android:layout_column="0"
-                                />
+                                android:layout_column="0"/>
                             <ImageButton
                                 android:id="@+id/btn_watbangsaikaimap"
-                                android:background="@android:drawable/ic_menu_mylocation"
-                                android:layout_marginTop="15dp"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                />
+                                android:layout_marginTop="5dp"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_row="1"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
+                            <ImageButton
+                                android:id="@+id/btn_watbangsaikaimaplocation"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="50dp"
+                                android:layout_row="1"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
 
                             <ImageButton
                                 android:id="@+id/btn_watkajubphinij"
-                                android:background="@drawable/n2"
-                                android:layout_width="250dp"
+                                android:src="@drawable/bg_listview_gr_wh"
+                                android:layout_width="320dp"
                                 android:layout_height="100dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_row="2"
-                                android:layout_column="0" />
-
+                                android:layout_column="0"/>
                             <ImageButton
                                 android:id="@+id/btn_watkajubphinijmap"
-                                android:background="@android:drawable/ic_menu_mylocation"
-                                android:layout_marginTop="15dp"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                />
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:layout_row="2"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
+                            <ImageButton
+                                android:id="@+id/btn_watkajubphinijmaplocation"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="50dp"
+                                android:layout_row="2"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
+
 
                             <ImageButton
                                 android:id="@+id/btn_watkrangdow"
-                                android:background="@drawable/n3"
-                                android:layout_width="250dp"
+                                android:src="@drawable/bg_listview_gr_wh"
+                                android:layout_width="320dp"
                                 android:layout_height="100dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_row="3"
-                                android:layout_column="0" />
-
+                                android:layout_column="0"/>
                             <ImageButton
                                 android:id="@+id/btn_watkrangdowmap"
-                                android:background="@android:drawable/ic_menu_mylocation"
-                                android:layout_marginTop="15dp"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                />
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:layout_row="3"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
+                            <ImageButton
+                                android:id="@+id/btn_watkrangdowmaplocation"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="50dp"
+                                android:layout_row="3"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
 
                             <ImageButton
                                 android:id="@+id/btn_watkanthatarararm"
-                                android:background="@drawable/n4"
-                                android:layout_width="250dp"
+                                android:src="@drawable/bg_listview_gr_wh"
+                                android:layout_width="320dp"
                                 android:layout_height="100dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_row="4"
-                                android:layout_column="0" />
+                                android:layout_column="0"/>
                             <ImageButton
                                 android:id="@+id/btn_watkanthatarararmmap"
-                                android:background="@android:drawable/ic_menu_mylocation"
-                                android:layout_marginTop="15dp"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                />
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:layout_row="4"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
+                            <ImageButton
+                                android:id="@+id/btn_watkanthatarararmmaplocation"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="50dp"
+                                android:layout_row="4"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
 
                             <ImageButton
                                 android:id="@+id/btn_watdowkanorng"
-                                android:background="@drawable/n5"
-                                android:layout_width="250dp"
+                                android:src="@drawable/bg_listview_gr_wh"
+                                android:layout_width="320dp"
                                 android:layout_height="100dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_row="5"
-                                android:layout_column="0" />
+                                android:layout_column="0"/>
                             <ImageButton
                                 android:id="@+id/btn_watdowkanorngmap"
-                                android:background="@android:drawable/ic_menu_mylocation"
-                                android:layout_marginTop="15dp"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                />
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:layout_row="5"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
+                            <ImageButton
+                                android:id="@+id/btn_watdowkanorngmaplocation"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="50dp"
+                                android:layout_row="5"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
 
                             <ImageButton
                                 android:id="@+id/btn_watbangnamchon"
-                                android:background="@drawable/n6"
-                                android:layout_width="250dp"
+                                android:src="@drawable/bg_listview_gr_wh"
+                                android:layout_width="320dp"
                                 android:layout_height="100dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_row="6"
-                                android:layout_column="0" />
+                                android:layout_column="0"/>
                             <ImageButton
                                 android:id="@+id/btn_watbangnamchonmap"
-                                android:background="@android:drawable/ic_menu_mylocation"
-                                android:layout_marginTop="15dp"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                />
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:layout_row="6"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
+                            <ImageButton
+                                android:id="@+id/btn_watbangnamchonmaplocation"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="50dp"
+                                android:layout_row="6"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
 
                             <ImageButton
                                 android:id="@+id/btn_watbangsachaenork"
-                                android:background="@drawable/n7"
-                                android:layout_width="250dp"
+                                android:src="@drawable/bg_listview_gr_wh"
+                                android:layout_width="320dp"
                                 android:layout_height="100dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_row="7"
-                                android:layout_column="0" />
+                                android:layout_column="0"/>
                             <ImageButton
                                 android:id="@+id/btn_watbangsachaenorkmap"
-                                android:background="@android:drawable/ic_menu_mylocation"
-                                android:layout_marginTop="15dp"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                />
+                                android:layout_marginTop="5dp"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_row="7"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
+                            <ImageButton
+                                android:id="@+id/btn_watbangsachaenorkmaplocation"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="50dp"
+                                android:layout_row="7"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
 
                             <ImageButton
                                 android:id="@+id/btn_watbangsachaenai"
-                                android:background="@drawable/n8"
-                                android:layout_width="250dp"
+                                android:src="@drawable/bg_listview_gr_wh"
+                                android:layout_width="320dp"
                                 android:layout_height="100dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_row="8"
-                                android:layout_column="0" />
+                                android:layout_column="0"/>
                             <ImageButton
                                 android:id="@+id/btn_watbangsachaenaimap"
-                                android:background="@android:drawable/ic_menu_mylocation"
-                                android:layout_marginTop="15dp"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                />
+                                android:layout_marginTop="5dp"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_row="8"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
+                            <ImageButton
+                                android:id="@+id/btn_watbangsachaenaimaplocation"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="50dp"
+                                android:layout_row="8"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
+
 
                             <ImageButton
                                 android:id="@+id/btn_watbukkarow"
-                                android:background="@drawable/n9"
-                                android:layout_width="250dp"
+                                android:src="@drawable/bg_listview_gr_wh"
+                                android:layout_width="320dp"
                                 android:layout_height="100dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_row="9"
-                                android:layout_column="0" />
+                                android:layout_column="0"/>
                             <ImageButton
                                 android:id="@+id/btn_watbukkarowmap"
-                                android:background="@android:drawable/ic_menu_mylocation"
-                                android:layout_marginTop="15dp"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                />
+                                android:layout_marginTop="5dp"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_row="9"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
+                            <ImageButton
+                                android:id="@+id/btn_watbukkarowmaplocation"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="50dp"
+                                android:layout_row="9"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
+
 
                             <ImageButton
                                 android:id="@+id/btn_watphadittharram"
-                                android:background="@drawable/n10"
-                                android:layout_width="250dp"
+                                android:src="@drawable/bg_listview_gr_wh"
+                                android:layout_width="320dp"
                                 android:layout_height="100dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_row="10"
-                                android:layout_column="0" />
+                                android:layout_column="0"/>
                             <ImageButton
                                 android:id="@+id/btn_watphadittharrammap"
-                                android:background="@android:drawable/ic_menu_mylocation"
-                                android:layout_marginTop="15dp"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                />
+                                android:layout_marginTop="5dp"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_row="10"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
+                            <ImageButton
+                                android:id="@+id/btn_watphadittharrammaplocation"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="50dp"
+                                android:layout_row="10"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
 
                             <ImageButton
                                 android:id="@+id/btn_watrajwarin"
-                                android:background="@drawable/n11"
-                                android:layout_width="250dp"
+                                android:src="@drawable/bg_listview_gr_wh"
+                                android:layout_width="320dp"
                                 android:layout_height="100dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_row="11"
-                                android:layout_column="0" />
+                                android:layout_column="0"/>
                             <ImageButton
                                 android:id="@+id/btn_watrajwarinmap"
-                                android:background="@android:drawable/ic_menu_mylocation"
-                                android:layout_marginTop="15dp"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                />
+                                android:layout_marginTop="5dp"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_row="11"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
+                            <ImageButton
+                                android:id="@+id/btn_watrajwarinmaplocation"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="50dp"
+                                android:layout_row="11"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
 
                             <ImageButton
                                 android:id="@+id/btn_watwararmartayaphanthasarrararm"
-                                android:background="@drawable/n12"
-                                android:layout_width="250dp"
+                                android:src="@drawable/bg_listview_gr_wh"
+                                android:layout_width="320dp"
                                 android:layout_height="100dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_row="12"
-                                android:layout_column="0" />
+                                android:layout_column="0"/>
                             <ImageButton
                                 android:id="@+id/btn_watwararmartayaphanthasarrararmmap"
-                                android:background="@android:drawable/ic_menu_mylocation"
-                                android:layout_marginTop="15dp"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                />
+                                android:layout_marginTop="5dp"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_row="12"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
+                            <ImageButton
+                                android:id="@+id/btn_watwararmartayaphanthasarrararmmaplocation"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="50dp"
+                                android:layout_row="12"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
 
                             <ImageButton
                                 android:id="@+id/btn_watsantithammararm"
-                                android:background="@drawable/n13"
-                                android:layout_width="250dp"
+                                android:src="@drawable/bg_listview_gr_wh"
+                                android:layout_width="320dp"
                                 android:layout_height="100dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_row="13"
-                                android:layout_column="0" />
+                                android:layout_column="0"/>
                             <ImageButton
                                 android:id="@+id/btn_watsantithammararmmap"
-                                android:background="@android:drawable/ic_menu_mylocation"
-                                android:layout_marginTop="15dp"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                />
+                                android:layout_marginTop="5dp"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_row="13"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
+                            <ImageButton
+                                android:id="@+id/btn_watsantithammararmmaplocation"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="50dp"
+                                android:layout_row="13"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
 
                             <ImageButton
                                 android:id="@+id/btn_watsuttharwhars"
-                                android:background="@drawable/n14"
-                                android:layout_width="250dp"
+                                android:src="@drawable/bg_listview_gr_wh"
+                                android:layout_width="320dp"
                                 android:layout_height="100dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_row="14"
-                                android:layout_column="0" />
+                                android:layout_column="0"/>
                             <ImageButton
                                 android:id="@+id/btn_watsuttharwharsmap"
-                                android:background="@android:drawable/ic_menu_mylocation"
-                                android:layout_marginTop="15dp"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                />
+                                android:layout_marginTop="5dp"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_row="14"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
+                            <ImageButton
+                                android:id="@+id/btn_watsuttharwharsmaplocation"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="50dp"
+                                android:layout_row="14"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
 
                             <ImageButton
                                 android:id="@+id/btn_watmaiyueynui"
-                                android:background="@drawable/n15"
-                                android:layout_width="250dp"
+                                android:src="@drawable/bg_listview_gr_wh"
+                                android:layout_width="320dp"
                                 android:layout_height="100dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_row="15"
-                                android:layout_column="0" />
+                                android:layout_column="0"/>
                             <ImageButton
                                 android:id="@+id/btn_watmaiyueynuimap"
-                                android:background="@android:drawable/ic_menu_mylocation"
-                                android:layout_marginTop="15dp"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                />
+                                android:layout_marginTop="5dp"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_row="15"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
+                            <ImageButton
+                                android:id="@+id/btn_watmaiyueynuimaplocation"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="50dp"
+                                android:layout_row="15"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
+
 
                         </GridLayout>
-
-
                 </ScrollView>
-
             </LinearLayout>
 
             <LinearLayout
@@ -346,147 +522,245 @@
 
                             <ImageButton
                                 android:id="@+id/btn_watkanrayanamit"
-                                android:background="@drawable/n16"
-                                android:layout_width="250dp"
+                                android:src="@drawable/bg_listview_gr_wh"
+                                android:layout_width="320dp"
                                 android:layout_height="100dp"
-                                android:layout_marginTop="5dp"
                                 android:layout_row="0"
-                                android:layout_column="0" />
+                                android:layout_column="0"/>
                             <ImageButton
                                 android:id="@+id/btn_watkanrayanamitmap"
-                                android:background="@android:drawable/ic_menu_mylocation"
-                                android:layout_marginTop="15dp"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                />
+                                android:layout_marginTop="3dp"
+                                android:layout_gravity="right"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_row="0"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
+                            <ImageButton
+                                android:id="@+id/btn_watkanrayanamitmaplocation"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="47dp"
+                                android:layout_row="0"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
 
                             <ImageButton
                                 android:id="@+id/btn_watjantarrarmvoraviharn"
-                                android:background="@drawable/n17"
-                                android:layout_width="250dp"
+                                android:src="@drawable/bg_listview_gr_wh"
+                                android:layout_width="320dp"
                                 android:layout_height="100dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_row="1"
-                                android:layout_column="0" />
+                                android:layout_column="0"/>
                             <ImageButton
                                 android:id="@+id/btn_watjantarrarmvoraviharnmap"
-                                android:background="@android:drawable/ic_menu_mylocation"
-                                android:layout_marginTop="15dp"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                />
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="right"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_row="1"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
+                            <ImageButton
+                                android:id="@+id/btn_watjantarrarmvoraviharnmaplocation"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="50dp"
+                                android:layout_row="1"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
 
                             <ImageButton
                                 android:id="@+id/btn_watbuppharhrm"
-                                android:background="@drawable/n18"
-                                android:layout_width="250dp"
+                                android:src="@drawable/bg_listview_gr_wh"
+                                android:layout_width="320dp"
                                 android:layout_height="100dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_row="2"
                                 android:layout_column="0" />
                             <ImageButton
                                 android:id="@+id/btn_watbuppharhrmmap"
-                                android:background="@android:drawable/ic_menu_mylocation"
-                                android:layout_marginTop="15dp"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                />
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="right"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_row="2"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
+                            <ImageButton
+                                android:id="@+id/btn_watbuppharhrmmaplocation"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="50dp"
+                                android:layout_row="2"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
 
                             <ImageButton
                                 android:id="@+id/btn_watprayutrawongsarvarsvoraviharn"
-                                android:background="@drawable/n19"
-                                android:layout_width="250dp"
+                                android:src="@drawable/bg_listview_gr_wh"
+                                android:layout_width="320dp"
                                 android:layout_height="100dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_row="3"
                                 android:layout_column="0" />
                             <ImageButton
                                 android:id="@+id/btn_watprayutrawongsarvarsvoraviharnmap"
-                                android:background="@android:drawable/ic_menu_mylocation"
-                                android:layout_marginTop="15dp"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                />
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="right"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_row="3"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
+                            <ImageButton
+                                android:id="@+id/btn_watprayutrawongsarvarsvoraviharnmaplocation"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="50dp"
+                                android:layout_row="3"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
 
                             <ImageButton
                                 android:id="@+id/btn_watphonimitsatitmaharsremararm"
-                                android:background="@drawable/n20"
-                                android:layout_width="250dp"
+                                android:src="@drawable/bg_listview_gr_wh"
+                                android:layout_width="320dp"
                                 android:layout_height="100dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_row="4"
                                 android:layout_column="0" />
                             <ImageButton
                                 android:id="@+id/btn_watphonimitsatitmaharsremararmmap"
-                                android:background="@android:drawable/ic_menu_mylocation"
-                                android:layout_marginTop="15dp"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                />
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="right"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_row="4"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
+                            <ImageButton
+                                android:id="@+id/btn_watphonimitsatitmaharsremararmmaplocation"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="50dp"
+                                android:layout_row="4"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
 
                             <ImageButton
                                 android:id="@+id/btn_watrajakruvoraviharn"
-                                android:background="@drawable/n21"
-                                android:layout_width="250dp"
+                                android:src="@drawable/bg_listview_gr_wh"
+                                android:layout_width="320dp"
                                 android:layout_height="100dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_row="5"
                                 android:layout_column="0" />
                             <ImageButton
                                 android:id="@+id/btn_watrajakruvoraviharnmap"
-                                android:background="@android:drawable/ic_menu_mylocation"
-                                android:layout_marginTop="15dp"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                />
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="right"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_row="5"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
+                            <ImageButton
+                                android:id="@+id/btn_watrajakruvoraviharnmaplocation"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="50dp"
+                                android:layout_row="5"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
 
                             <ImageButton
                                 android:id="@+id/btn_watweyrurachin"
-                                android:background="@drawable/n22"
-                                android:layout_width="250dp"
+                                android:src="@drawable/bg_listview_gr_wh"
+                                android:layout_width="320dp"
                                 android:layout_height="100dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_row="6"
                                 android:layout_column="0" />
                             <ImageButton
                                 android:id="@+id/btn_watweyrurachinmap"
-                                android:background="@android:drawable/ic_menu_mylocation"
-                                android:layout_marginTop="15dp"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                />
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="right"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_row="6"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
+                            <ImageButton
+                                android:id="@+id/btn_watweyrurachinmaplocation"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="50dp"
+                                android:layout_row="6"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
 
                             <ImageButton
                                 android:id="@+id/btn_wathiranruge"
-                                android:background="@drawable/n23"
-                                android:layout_width="250dp"
+                                android:src="@drawable/bg_listview_gr_wh"
+                                android:layout_width="320dp"
                                 android:layout_height="100dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_row="7"
                                 android:layout_column="0" />
                             <ImageButton
                                 android:id="@+id/btn_wathiranrugemap"
-                                android:background="@android:drawable/ic_menu_mylocation"
-                                android:layout_marginTop="15dp"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                />
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="right"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_row="7"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
+                            <ImageButton
+                                android:id="@+id/btn_wathiranrugemaplocation"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="50dp"
+                                android:layout_row="7"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
 
                             <ImageButton
                                 android:id="@+id/btn_watintararmvoraviharn"
-                                android:background="@drawable/n24"
-                                android:layout_width="250dp"
+                                android:src="@drawable/bg_listview_gr_wh"
+                                android:layout_width="320dp"
                                 android:layout_height="100dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_row="8"
                                 android:layout_column="0" />
                             <ImageButton
                                 android:id="@+id/btn_watintararmvoraviharnmap"
-                                android:background="@android:drawable/ic_menu_mylocation"
-                                android:layout_marginTop="15dp"
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
-                                />
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="right"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_row="8"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
+                            <ImageButton
+                                android:id="@+id/btn_watintararmvoraviharnmaplocation"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="50dp"
+                                android:layout_row="8"
+                                android:layout_column="0"
+                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
                         </GridLayout>
 
 
@@ -495,8 +769,6 @@
             </LinearLayout>
 
         </FrameLayout>
-
-
 
     </LinearLayout>
 </TabHost>

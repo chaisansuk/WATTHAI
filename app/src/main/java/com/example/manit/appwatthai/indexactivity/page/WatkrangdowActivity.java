@@ -18,26 +18,11 @@ public class WatkrangdowActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.watkrangdow_layout);
         ImageButton back = (ImageButton) findViewById(R.id.back);
-        ImageButton btn_location3 = (ImageButton) findViewById(R.id.btn_location3);
 
         WebView webView = (WebView) findViewById(R.id.webViewn3);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl("http://watthaiapp.6te.net/watkrangdow.html");
 
-        //Go to location pagemap
-        btn_location3.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                // Launching Screen
-                Intent i = new Intent(getApplicationContext(), MapsActivity.class);
-                i.putExtra("Lat", 13.696599);
-                i.putExtra("Lng", 100.488186);
-                i.putExtra("Title", "วัดกลางดาวคนอง");
-                i.putExtra("Detail", "วัดราษฏร์,13.696599, 100.488186");
-                startActivity(i);
-            }
-        });
 
         back.setOnClickListener(new View.OnClickListener() {
 

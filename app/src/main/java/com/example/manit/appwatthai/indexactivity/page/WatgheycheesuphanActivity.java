@@ -19,26 +19,13 @@ public class WatgheycheesuphanActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.watgheycheesuphan_layout);
         ImageButton back = (ImageButton) findViewById(R.id.back);
-        ImageButton btn_location0 = (ImageButton) findViewById(R.id.btn_location0);
+
 
         WebView webView = (WebView) findViewById(R.id.webViewn0);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl("http://watthaiapp.6te.net/watgheysresuphan.html");
 
-        //Go to location pagemap
-        btn_location0.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View view) {
-                // Launching Screen
-                Intent i = new Intent(getApplicationContext(), MapsActivity.class);
-                i.putExtra("Lat", 13.719178);
-                i.putExtra("Lng", 100.485974);
-                i.putExtra("Title", "วัดใหญ่ศรีสุพรรณ");
-                i.putExtra("Detail", "วัดราษฏร์,13.719178, 100.485974");
-                startActivity(i);
-            }
-        });
 
         back.setOnClickListener(new View.OnClickListener() {
 

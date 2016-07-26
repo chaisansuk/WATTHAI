@@ -19,26 +19,12 @@ public class WatkanthatarararmActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.watkanthatarararm_layout);
         ImageButton back = (ImageButton) findViewById(R.id.back);
-        ImageButton btn_location4 = (ImageButton) findViewById(R.id.btn_location4);
+
 
         WebView webView = (WebView) findViewById(R.id.webViewn4);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl("http://watthaiapp.6te.net/watkanthatarararm.html");
 
-        //Go to location pagemap
-        btn_location4.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                // Launching Screen
-                Intent i = new Intent(getApplicationContext(), MapsActivity.class);
-                i.putExtra("Lat", 13.718941);
-                i.putExtra("Lng", 100.479304);
-                i.putExtra("Title", " วัดกันตทาราราม");
-                i.putExtra("Detail", "วัดราษฏร์, 13.718941, 100.479304");
-                startActivity(i);
-            }
-        });
 
         back.setOnClickListener(new View.OnClickListener() {
 

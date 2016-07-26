@@ -18,26 +18,12 @@ public class WatwararmartayaphanthasarrararmActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.watwararmartayaphanthasarrararm_layout);
         ImageButton back = (ImageButton) findViewById(R.id.back);
-        ImageButton btn_location12 = (ImageButton) findViewById(R.id.btn_location12);
+
 
         WebView webView = (WebView) findViewById(R.id.webViewn12);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl("http://watthaiapp.6te.net/watvoramatayaphan.html");
 
-        //Go to location pagemap
-        btn_location12.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                // Launching Screen
-                Intent i = new Intent(getApplicationContext(), MapsActivity.class);
-                i.putExtra("Lat", 13.719772);
-                i.putExtra("Lng", 100.470898);
-                i.putExtra("Title", "วัดวรามาตยภัณฑสาราราม");
-                i.putExtra("Detail", "วัดราษฏร์, 13.719772, 100.470898");
-                startActivity(i);
-            }
-        });
 
         back.setOnClickListener(new View.OnClickListener() {
 

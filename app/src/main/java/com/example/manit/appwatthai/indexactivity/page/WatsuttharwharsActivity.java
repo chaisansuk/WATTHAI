@@ -19,26 +19,11 @@ public class WatsuttharwharsActivity extends Activity {
         setContentView(R.layout.watsuttharwhars_layout);
 
         ImageButton back = (ImageButton) findViewById(R.id.back);
-        ImageButton btn_location14 = (ImageButton) findViewById(R.id.btn_location14);
 
         WebView webView = (WebView) findViewById(R.id.webViewn14);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl("http://watthaiapp.6te.net/watsuttawarse.html");
 
-        //Go to location pagemap
-        btn_location14.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                // Launching Screen
-                Intent i = new Intent(getApplicationContext(), MapsActivity.class);
-                i.putExtra("Lat", 13.707980);
-                i.putExtra("Lng", 100.482146);
-                i.putExtra("Title", "วัดสุทธาวาส");
-                i.putExtra("Detail", "วัดราษฏร์, 13.707980, 100.482146");
-                startActivity(i);
-            }
-        });
 
         back.setOnClickListener(new View.OnClickListener() {
 

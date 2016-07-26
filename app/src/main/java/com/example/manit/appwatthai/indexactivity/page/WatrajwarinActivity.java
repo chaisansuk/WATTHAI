@@ -18,26 +18,10 @@ public class WatrajwarinActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.watrajwarin_layout);
         ImageButton back = (ImageButton) findViewById(R.id.back);
-        ImageButton btn_location11 = (ImageButton) findViewById(R.id.btn_location11);
 
         WebView webView = (WebView) findViewById(R.id.webViewn11);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl("http://watthaiapp.6te.net/watratjawarin.html");
-
-        //Go to location pagemap
-        btn_location11.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                // Launching Screen
-                Intent i = new Intent(getApplicationContext(), MapsActivity.class);
-                i.putExtra("Lat", 13.708958);
-                i.putExtra("Lng", 100.491758);
-                i.putExtra("Title", "วัดราชวรินทร์");
-                i.putExtra("Detail", "วัดราษฏร์, 13.708958, 100.491758");
-                startActivity(i);
-            }
-        });
 
         back.setOnClickListener(new View.OnClickListener() {
 

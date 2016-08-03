@@ -26,7 +26,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
-    private GoogleMap mMap; // Might be null if Google Play services APK is not available.
+    private GoogleMap mMap;
     private TextView latTextView, lngTextView;
     private LocationManager locationManager;
     private Criteria criteria;
@@ -184,7 +184,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private void setUpMap() {
         mMap.setMyLocationEnabled(true);
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(13.716630, 100.487487),16));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(13.716630, 100.487487),12));
 
         //create marker
         double douLat = getIntent().getDoubleExtra("Lat", 13.716630);
@@ -196,7 +196,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         mMap.addMarker(new MarkerOptions()
         .position(latLng)
-        .icon(BitmapDescriptorFactory.fromResource(R.drawable.build1))
+        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ROSE))
         .title(strTitle)
         .snippet(strDetail));
 
@@ -204,4 +204,5 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
 }//main class
 
-
+   // icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ROSE))
+   // icon(BitmapDescriptorFactory.fromResource(R.drawable.build1))

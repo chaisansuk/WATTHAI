@@ -22,7 +22,7 @@ public class MainStartActivity extends Activity {
         PortalNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent nextPage = new Intent(MainStartActivity.this, MainHomeActivity.class);
+                Intent nextPage = new Intent(MainStartActivity.this, HomeActivity.class);
                 startActivity(nextPage);
             }
         });

@@ -4,18 +4,13 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	tools:context="com.example.manit.appwatthai.indexactivity.page.WatwararmartayaphanthasarrararmActivity"
+	tools:context=".indexactivity.page.watrat.WatwararmartayaphanthasarrararmActivity"
 	android:orientation="vertical">
 	<RelativeLayout
 		android:id="@+id/relativeLayout1"
 		android:layout_width="fill_parent"
 		android:layout_height="40dp"
 		android:background="#d2be85" >
-		<ImageButton
-			android:id="@+id/back"
-			android:layout_width="40dp"
-			android:layout_height="40dp"
-			android:background="@drawable/ic_backspace_orange_50_18dp" />
 		<TextView
 			android:id="@+id/textView1"
 			android:layout_width="wrap_content"
@@ -24,9 +19,16 @@
 			android:layout_centerVertical="true"
 			android:text="WATTHAI"
 			android:textColor="@color/black"
-			android:textSize="22dp"
+			android:textSize="30dp"
 			android:textStyle="bold"
 			android:typeface="sans" />
+		<ImageButton
+			android:id="@+id/back"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:src="@drawable/ic_backspace_orange_50_18dp"
+			android:background="#d2be85"
+			android:layout_alignParentLeft="true" />
 	</RelativeLayout>
 	<ScrollView
 		xmlns:android="http://schemas.android.com/apk/res/android"

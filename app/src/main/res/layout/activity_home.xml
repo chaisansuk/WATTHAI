@@ -20,7 +20,7 @@
             android:textColor="@color/black"
             android:textSize="30dp"
             android:textStyle="bold"
-            android:typeface="sans" />
+            android:typeface="serif" />
         <ImageButton
             android:id="@+id/back"
             android:layout_width="40dp"
@@ -46,7 +46,7 @@
         android:id="@android:id/tabs"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@drawable/bg_listview_gr_wh">
+        android:background="#FFFFFF">
           </TabWidget>
 
         <FrameLayout
@@ -69,7 +69,6 @@
                             xmlns:android="http://schemas.android.com/apk/res/android"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
-
                             <ImageButton
                                 android:id="@+id/btn_watgheycheesuphan"
                                 android:background="@drawable/n0"
@@ -79,25 +78,6 @@
                                 android:layout_row="0"
                                 android:layout_column="0"/>
                             <ImageButton
-                                android:id="@+id/btn_watgheycheesuphanmap"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_marginTop="3dp"
-                                android:layout_row="0"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
-                            <ImageButton
-                                android:id="@+id/btn_watgheycheesuphanmaplocation"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_marginTop="47dp"
-                                android:layout_row="0"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
-
-                            <ImageButton
                                 android:id="@+id/btn_watbangsaikai"
                                 android:background="@drawable/n1"
                                 android:layout_width="wrap_content"
@@ -105,25 +85,6 @@
                                 android:layout_marginTop="5dp"
                                 android:layout_row="1"
                                 android:layout_column="0"/>
-                            <ImageButton
-                                android:id="@+id/btn_watbangsaikaimap"
-                                android:layout_marginTop="5dp"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_row="1"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
-                            <ImageButton
-                                android:id="@+id/btn_watbangsaikaimaplocation"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_marginTop="50dp"
-                                android:layout_row="1"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
-
                             <ImageButton
                                 android:id="@+id/btn_watkajubphinij"
                                 android:background="@drawable/n2"
@@ -133,25 +94,6 @@
                                 android:layout_row="2"
                                 android:layout_column="0"/>
                             <ImageButton
-                                android:id="@+id/btn_watkajubphinijmap"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_marginTop="5dp"
-                                android:layout_row="2"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
-                            <ImageButton
-                                android:id="@+id/btn_watkajubphinijmaplocation"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_marginTop="50dp"
-                                android:layout_row="2"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
-
-                            <ImageButton
                                 android:id="@+id/btn_watkrangdow"
                                 android:background="@drawable/n3"
                                 android:layout_width="wrap_content"
@@ -159,25 +101,6 @@
                                 android:layout_marginTop="5dp"
                                 android:layout_row="3"
                                 android:layout_column="0"/>
-                            <ImageButton
-                                android:id="@+id/btn_watkrangdowmap"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_marginTop="5dp"
-                                android:layout_row="3"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
-                            <ImageButton
-                                android:id="@+id/btn_watkrangdowmaplocation"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_marginTop="50dp"
-                                android:layout_row="3"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
-
                             <ImageButton
                                 android:id="@+id/btn_watkanthatarararm"
                                 android:background="@drawable/n4"
@@ -187,25 +110,6 @@
                                 android:layout_row="4"
                                 android:layout_column="0"/>
                             <ImageButton
-                                android:id="@+id/btn_watkanthatarararmmap"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_marginTop="5dp"
-                                android:layout_row="4"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
-                            <ImageButton
-                                android:id="@+id/btn_watkanthatarararmmaplocation"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_marginTop="50dp"
-                                android:layout_row="4"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
-
-                            <ImageButton
                                 android:id="@+id/btn_watdowkanorng"
                                 android:background="@drawable/n5"
                                 android:layout_width="wrap_content"
@@ -213,25 +117,6 @@
                                 android:layout_marginTop="5dp"
                                 android:layout_row="5"
                                 android:layout_column="0"/>
-                            <ImageButton
-                                android:id="@+id/btn_watdowkanorngmap"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_marginTop="5dp"
-                                android:layout_row="5"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
-                            <ImageButton
-                                android:id="@+id/btn_watdowkanorngmaplocation"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_marginTop="50dp"
-                                android:layout_row="5"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
-
                             <ImageButton
                                 android:id="@+id/btn_watbangnamchon"
                                 android:background="@drawable/n6"
@@ -241,25 +126,6 @@
                                 android:layout_row="6"
                                 android:layout_column="0"/>
                             <ImageButton
-                                android:id="@+id/btn_watbangnamchonmap"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_marginTop="5dp"
-                                android:layout_row="6"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
-                            <ImageButton
-                                android:id="@+id/btn_watbangnamchonmaplocation"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_marginTop="50dp"
-                                android:layout_row="6"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
-
-                            <ImageButton
                                 android:id="@+id/btn_watbangsachaenork"
                                 android:background="@drawable/n7"
                                 android:layout_width="wrap_content"
@@ -267,25 +133,6 @@
                                 android:layout_marginTop="5dp"
                                 android:layout_row="7"
                                 android:layout_column="0"/>
-                            <ImageButton
-                                android:id="@+id/btn_watbangsachaenorkmap"
-                                android:layout_marginTop="5dp"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_row="7"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
-                            <ImageButton
-                                android:id="@+id/btn_watbangsachaenorkmaplocation"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_marginTop="50dp"
-                                android:layout_row="7"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
-
                             <ImageButton
                                 android:id="@+id/btn_watbangsachaenai"
                                 android:background="@drawable/n8"
@@ -295,25 +142,6 @@
                                 android:layout_row="8"
                                 android:layout_column="0"/>
                             <ImageButton
-                                android:id="@+id/btn_watbangsachaenaimap"
-                                android:layout_marginTop="5dp"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_row="8"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
-                            <ImageButton
-                                android:id="@+id/btn_watbangsachaenaimaplocation"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_marginTop="50dp"
-                                android:layout_row="8"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
-
-                            <ImageButton
                                 android:id="@+id/btn_watbukkarow"
                                 android:background="@drawable/n9"
                                 android:layout_width="wrap_content"
@@ -321,25 +149,6 @@
                                 android:layout_marginTop="5dp"
                                 android:layout_row="9"
                                 android:layout_column="0"/>
-                            <ImageButton
-                                android:id="@+id/btn_watbukkarowmap"
-                                android:layout_marginTop="5dp"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_row="9"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
-                            <ImageButton
-                                android:id="@+id/btn_watbukkarowmaplocation"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_marginTop="50dp"
-                                android:layout_row="9"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
-
                             <ImageButton
                                 android:id="@+id/btn_watphadittharram"
                                 android:background="@drawable/n10"
@@ -349,25 +158,6 @@
                                 android:layout_row="10"
                                 android:layout_column="0"/>
                             <ImageButton
-                                android:id="@+id/btn_watphadittharrammap"
-                                android:layout_marginTop="5dp"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_row="10"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
-                            <ImageButton
-                                android:id="@+id/btn_watphadittharrammaplocation"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_marginTop="50dp"
-                                android:layout_row="10"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
-
-                            <ImageButton
                                 android:id="@+id/btn_watrajwarin"
                                 android:background="@drawable/n11"
                                 android:layout_width="wrap_content"
@@ -375,25 +165,6 @@
                                 android:layout_marginTop="5dp"
                                 android:layout_row="11"
                                 android:layout_column="0"/>
-                            <ImageButton
-                                android:id="@+id/btn_watrajwarinmap"
-                                android:layout_marginTop="5dp"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_row="11"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
-                            <ImageButton
-                                android:id="@+id/btn_watrajwarinmaplocation"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_marginTop="50dp"
-                                android:layout_row="11"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
-
                             <ImageButton
                                 android:id="@+id/btn_watwararmartayaphanthasarrararm"
                                 android:background="@drawable/n12"
@@ -403,25 +174,6 @@
                                 android:layout_row="12"
                                 android:layout_column="0"/>
                             <ImageButton
-                                android:id="@+id/btn_watwararmartayaphanthasarrararmmap"
-                                android:layout_marginTop="5dp"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_row="12"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
-                            <ImageButton
-                                android:id="@+id/btn_watwararmartayaphanthasarrararmmaplocation"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_marginTop="50dp"
-                                android:layout_row="12"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
-
-                            <ImageButton
                                 android:id="@+id/btn_watsantithammararm"
                                 android:background="@drawable/n13"
                                 android:layout_width="wrap_content"
@@ -429,25 +181,6 @@
                                 android:layout_marginTop="5dp"
                                 android:layout_row="13"
                                 android:layout_column="0"/>
-                            <ImageButton
-                                android:id="@+id/btn_watsantithammararmmap"
-                                android:layout_marginTop="5dp"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_row="13"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
-                            <ImageButton
-                                android:id="@+id/btn_watsantithammararmmaplocation"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_marginTop="50dp"
-                                android:layout_row="13"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
-
                             <ImageButton
                                 android:id="@+id/btn_watsuttharwhars"
                                 android:background="@drawable/n14"
@@ -457,25 +190,6 @@
                                 android:layout_row="14"
                                 android:layout_column="0"/>
                             <ImageButton
-                                android:id="@+id/btn_watsuttharwharsmap"
-                                android:layout_marginTop="5dp"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_row="14"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
-                            <ImageButton
-                                android:id="@+id/btn_watsuttharwharsmaplocation"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_marginTop="50dp"
-                                android:layout_row="14"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
-
-                            <ImageButton
                                 android:id="@+id/btn_watmaiyueynui"
                                 android:background="@drawable/n15"
                                 android:layout_width="wrap_content"
@@ -483,26 +197,6 @@
                                 android:layout_marginTop="5dp"
                                 android:layout_row="15"
                                 android:layout_column="0"/>
-                            <ImageButton
-                                android:id="@+id/btn_watmaiyueynuimap"
-                                android:layout_marginTop="5dp"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_row="15"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
-                            <ImageButton
-                                android:id="@+id/btn_watmaiyueynuimaplocation"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_marginTop="50dp"
-                                android:layout_row="15"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
-
-
                         </GridLayout>
                 </ScrollView>
 
@@ -533,24 +227,7 @@
                                 android:layout_marginTop="2dp"
                                 android:layout_row="0"
                                 android:layout_column="0"/>
-                            <ImageButton
-                                android:id="@+id/btn_watkanrayanamitmap"
-                                android:layout_marginTop="3dp"
-                                android:layout_gravity="right"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_row="0"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
-                            <ImageButton
-                                android:id="@+id/btn_watkanrayanamitmaplocation"
-                                android:layout_width="40dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="right"
-                                android:layout_marginTop="47dp"
-                                android:layout_row="0"
-                                android:layout_column="0"
-                                android:src="@drawable/ic_navigation_amber_300_18dp"/>
+
 
                             <ImageButton
                                 android:id="@+id/btn_watjantarrarmvoraviharn"

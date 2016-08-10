@@ -15,7 +15,7 @@ import com.example.manit.appwatthai.R;
 import com.example.manit.appwatthai.indexactivity.map.MapsActivity;
 
 
-public class WatgheycheesuphanActivity extends Activity {
+public class WatgheycheesuphanActivity extends Activity{
 	 /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {

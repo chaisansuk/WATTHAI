@@ -86,20 +86,22 @@
 				android:id="@+id/map13"
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"
-				android:orientation="vertical">
+				android:orientation="vertical"
+				android:background="@drawable/map">
+
 				<ImageButton
 					android:id="@+id/btn_watsantithammararmmap"
-					android:layout_marginTop="5dp"
-					android:layout_width="fill_parent"
+					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:layout_gravity="center"
+					android:layout_gravity="right|center_horizontal"
+					android:layout_marginTop="3dp"
 					android:src="@drawable/ic_pin_drop_amber_400_18dp"/>
+
 				<ImageButton
 					android:id="@+id/btn_watsantithammararmmaplocation"
-					android:layout_width="fill_parent"
+					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:layout_gravity="center"
-					android:layout_marginTop="50dp"
+					android:layout_gravity="right"
 					android:src="@drawable/ic_navigation_amber_300_18dp"/>
 			</LinearLayout>
 

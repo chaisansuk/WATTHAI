@@ -30,11 +30,10 @@
             android:layout_alignParentLeft="true" />
         <ImageButton
             android:id="@+id/help"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_alignParentRight="true"
-            android:src="@drawable/ic_help_outline_white_18dp"
-            android:background="#d2be85"/>
+            android:src="@drawable/world" />
     </RelativeLayout>
     <LinearLayout
         android:layout_width="fill_parent"

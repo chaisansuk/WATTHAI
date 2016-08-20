@@ -32,7 +32,7 @@ public class WatbangnamchonActivity extends Activity {
         tabHost.addTab (tab_detail);
         WebView webView = (WebView) findViewById(R.id.webViewn6);
         webView.getSettings().setJavaScriptEnabled(true);
-        webView.loadUrl("http://watthaiapp.6te.net/watbangnamchon.html");
+        webView.loadUrl("http://watthaiapp.6te.net/watbangnamchon1.html");
 
         TabHost.TabSpec tab_map = tabHost.newTabSpec ("MAP");
         tab_map.setIndicator ("แผนที่");

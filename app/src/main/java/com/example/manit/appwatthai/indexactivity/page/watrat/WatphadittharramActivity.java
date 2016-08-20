@@ -32,7 +32,7 @@ public class WatphadittharramActivity extends Activity {
         tabHost.addTab (tab_detail);
         WebView webView = (WebView) findViewById(R.id.webViewn10);
         webView.getSettings().setJavaScriptEnabled(true);
-        webView.loadUrl("http://watthaiapp.6te.net/watpraditthararm.html");
+        webView.loadUrl("http://watthaiapp.6te.net/watpraditthararm1.html");
 
         TabHost.TabSpec tab_map = tabHost.newTabSpec ("MAP");
         tab_map.setIndicator ("แผนที่");

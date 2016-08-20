@@ -33,7 +33,7 @@ public class WatbangsaikaiActivity extends Activity {
         tabHost.addTab (tab_detail);
         WebView webView = (WebView) findViewById(R.id.webViewn1);
         webView.getSettings().setJavaScriptEnabled(true);
-        webView.loadUrl("http://watthaiapp.6te.net/watbangsaikai.html");
+        webView.loadUrl("http://watthaiapp.6te.net/watbangsaikai1.html");
 
         TabHost.TabSpec tab_map = tabHost.newTabSpec ("MAP");
         tab_map.setIndicator ("แผนที่");

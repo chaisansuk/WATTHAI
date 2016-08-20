@@ -1,5 +1,6 @@
 package com.example.manit.appwatthai.indexactivity.map;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.location.Criteria;
@@ -31,7 +32,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private LocationManager locationManager;
     private Criteria criteria;
     private double latADouble, lngADouble;
-
+    ProgressDialog dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,11 +48,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 finish();
             }
         });
-//Bind Widget
+        //Bind Widget
         bindWidget();
-
         //Setup location
         setUpLocation();
+
+        dialog = new ProgressDialog(MapsActivity.this);
+        dialog.show();
+        dialog.setMessage("Getting Coordinates");
 
 
     } // Main Method
@@ -114,12 +118,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public LocationListener locationListener = new LocationListener() {
         @Override
         public void onLocationChanged(Location location) {
-
+            dialog.show();
             latADouble = location.getLatitude();
             lngADouble = location.getLongitude();
-
-            latTextView.setText(String.format("%.7f", latADouble));
-            lngTextView.setText(String.format("%.7f", lngADouble));
+            if (latADouble != 0 && lngADouble != 0) {
+                latTextView.setText(String.format("%.7f", latADouble));
+                lngTextView.setText(String.format("%.7f", lngADouble));
+                dialog.dismiss();
+            }
         }//onlocationchang
 
         @Override
@@ -196,7 +202,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         mMap.addMarker(new MarkerOptions()
         .position(latLng)
-        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ROSE))
+        .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_drop_amber_400_18dp))
         .title(strTitle)
         .snippet(strDetail));
 

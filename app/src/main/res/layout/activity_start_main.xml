@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:context=".indexactivity.activity.MainStartActivity"
-    android:background="@drawable/backgg">
+    android:background="@drawable/backgm2">
 
     <Button
         android:layout_width="match_parent"

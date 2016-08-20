@@ -32,7 +32,7 @@ public class WatsuttharwharsActivity extends Activity {
         tabHost.addTab (tab_detail);
         WebView webView = (WebView) findViewById(R.id.webViewn14);
         webView.getSettings().setJavaScriptEnabled(true);
-        webView.loadUrl("http://watthaiapp.6te.net/watsuttawarse.html");
+        webView.loadUrl("http://watthaiapp.6te.net/watsuttawarse1.html");
 
 
         TabHost.TabSpec tab_map = tabHost.newTabSpec ("MAP");

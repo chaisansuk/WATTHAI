@@ -33,7 +33,7 @@ public class WatgheycheesuphanActivity extends Activity{
         tabHost.addTab (tab_detail);
         WebView webView = (WebView) findViewById(R.id.webViewn0);
         webView.getSettings().setJavaScriptEnabled(true);
-        webView.loadUrl("http://watthaiapp.6te.net/watgheysresuphan.html");
+        webView.loadUrl("http://watthaiapp.6te.net/watgheysresuphan1.html");
 
         TabHost.TabSpec tab_map = tabHost.newTabSpec ("MAP");
         tab_map.setIndicator ("แผนที่");

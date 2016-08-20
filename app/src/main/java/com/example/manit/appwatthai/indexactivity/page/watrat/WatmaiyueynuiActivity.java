@@ -31,7 +31,7 @@ public class WatmaiyueynuiActivity extends Activity {
         tabHost.addTab (tab_detail);
         WebView webView = (WebView) findViewById(R.id.webViewn15);
         webView.getSettings().setJavaScriptEnabled(true);
-        webView.loadUrl("http://watthaiapp.6te.net/watmaiyueynui.html");
+        webView.loadUrl("http://watthaiapp.6te.net/watmaiyueynui1.html");
 
 
         TabHost.TabSpec tab_map = tabHost.newTabSpec ("MAP");

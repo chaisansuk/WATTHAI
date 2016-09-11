@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.manit.appwatthai.R;
 
@@ -27,6 +28,7 @@ public class MainStartActivity extends Activity {
             }
         });
     }
+
     public void onBackPressed() {
         AlertDialog.Builder dialog = new AlertDialog.Builder(this);
         dialog.setTitle("Exit");

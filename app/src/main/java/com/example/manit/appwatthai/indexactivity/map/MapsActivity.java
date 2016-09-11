@@ -2,12 +2,10 @@ package com.example.manit.appwatthai.indexactivity.map;
 
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.Intent;
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
@@ -202,7 +200,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         mMap.addMarker(new MarkerOptions()
         .position(latLng)
-        .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pin_drop_amber_400_18dp))
+        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE))
         .title(strTitle)
         .snippet(strDetail));
 

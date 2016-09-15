@@ -30,9 +30,8 @@
             <ImageButton
                 android:id="@+id/back"
                 android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/ic_backspace_orange_50_18dp"
-                android:background="#d2be85"
+                android:layout_height="70dp"
+                android:background="@drawable/ic_backspace_orange_50_18dp"
                 android:layout_alignParentLeft="true" />
         </RelativeLayout>
     </LinearLayout>

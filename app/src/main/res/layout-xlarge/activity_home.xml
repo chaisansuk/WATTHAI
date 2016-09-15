@@ -23,18 +23,18 @@
             android:typeface="serif" />
         <ImageButton
             android:id="@+id/back"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            android:src="@drawable/ic_backspace_orange_50_18dp"
-            android:background="#d2be85"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:background="@drawable/ic_backspace_orange_50_18dp"
             android:layout_alignParentLeft="true" />
         <ImageButton
             android:id="@+id/help"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_alignParentRight="true"
-            android:src="@drawable/world" />
+            android:background="@drawable/world" />
     </RelativeLayout>
+
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -131,13 +131,7 @@
                                 android:layout_height="200dp"
                                 android:layout_row="8"
                                 android:layout_column="0"/>
-                            <ImageButton
-                                android:id="@+id/btn_watbukkarow"
-                                android:background="@drawable/n9"
-                                android:layout_width="wrap_content"
-                                android:layout_height="200dp"
-                                android:layout_row="9"
-                                android:layout_column="0"/>
+
                             <ImageButton
                                 android:id="@+id/btn_watphadittharram"
                                 android:background="@drawable/n10"
@@ -180,6 +174,15 @@
                                 android:layout_height="200dp"
                                 android:layout_row="15"
                                 android:layout_column="0"/>
+
+                            <ImageButton
+                                android:id="@+id/btn_watbukkarow"
+                                android:background="@drawable/n9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="200dp"
+                                android:layout_row="9"
+                                android:layout_column="0"
+                                android:elevation="0dp" />
                         </GridLayout>
                 </ScrollView>
             </LinearLayout>

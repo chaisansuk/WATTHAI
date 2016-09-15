@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.manit.appwatthai">
+    package="com.ch.manit.watthai">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -16,7 +16,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".indexactivity.activity.SplashScreen"
+        <activity android:name="com.ch.manit.watthai.indexactivity.activity.SplashScreen"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,68 +29,68 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
         <activity
-            android:name=".indexactivity.activity.MainStartActivity"
+            android:name="com.ch.manit.watthai.indexactivity.activity.MainStartActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".indexactivity.map.MapsActivity"
+            android:name="com.ch.manit.watthai.indexactivity.map.MapsActivity"
             android:label="@string/title_activity_maps"
             android:screenOrientation="portrait"/>
-        <activity android:name=".indexactivity.activity.HomeActivity"
+        <activity android:name="com.ch.manit.watthai.indexactivity.activity.HomeActivity"
             android:screenOrientation="portrait"/>
 
-        <activity android:name=".indexactivity.page.WebhelpMapActivity"
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.WebhelpMapActivity"
             android:screenOrientation="portrait"/>
 
-        <activity android:name=".indexactivity.page.watrat.WatkajubphinijActivity"
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatkajubphinijActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".indexactivity.page.phaaramluang.WatbuppharhrmActivity"
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.phaaramluang.WatbuppharhrmActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".indexactivity.page.phaaramluang.WatkanrayanamitActivity"
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.phaaramluang.WatkanrayanamitActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".indexactivity.page.watrat.WatbangsaikaiActivity"
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatbangsaikaiActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".indexactivity.page.watrat.WatgheycheesuphanActivity"
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatgheycheesuphanActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".indexactivity.page.phaaramluang.WathiranrugeActivity"
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.phaaramluang.WathiranrugeActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".indexactivity.page.watrat.WatkrangdowActivity"
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatkrangdowActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".indexactivity.page.watrat.WatkanthatarararmActivity"
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatkanthatarararmActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".indexactivity.page.phaaramluang.WatjantarrarmvoraviharnActivity"
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.phaaramluang.WatjantarrarmvoraviharnActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".indexactivity.page.watrat.WatdowkanorngActivity"
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatdowkanorngActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".indexactivity.page.watrat.WatbangnamchonActivity"
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatbangnamchonActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".indexactivity.page.watrat.WatbangsachaenorkActivity"
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatbangsachaenorkActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".indexactivity.page.watrat.WatbangsachaenaiActivity"
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatbangsachaenaiActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".indexactivity.page.watrat.WatbukkarowActivity"
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatbukkarowActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".indexactivity.page.watrat.WatphadittharramActivity"
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatphadittharramActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".indexactivity.page.phaaramluang.WatprayutrawongsarvarsvoraviharnActivity"
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.phaaramluang.WatprayutrawongsarvarsvoraviharnActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".indexactivity.page.phaaramluang.WatphonimitsatitmaharsremararmActivity"
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.phaaramluang.WatphonimitsatitmaharsremararmActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".indexactivity.page.phaaramluang.WatrajakruvoraviharnActivity"
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.phaaramluang.WatrajakruvoraviharnActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".indexactivity.page.watrat.WatrajwarinActivity"
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatrajwarinActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".indexactivity.page.watrat.WatwararmartayaphanthasarrararmActivity"
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatwararmartayaphanthasarrararmActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".indexactivity.page.phaaramluang.WatweyrurachinActivity"
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.phaaramluang.WatweyrurachinActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".indexactivity.page.watrat.WatsantithammararmActivity"
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatsantithammararmActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".indexactivity.page.watrat.WatsuttharwharsActivity"
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatsuttharwharsActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".indexactivity.page.watrat.WatmaiyueynuiActivity"
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.watrat.WatmaiyueynuiActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".indexactivity.page.phaaramluang.WatintararmvoraviharnActivity"
+        <activity android:name="com.ch.manit.watthai.indexactivity.page.phaaramluang.WatintararmvoraviharnActivity"
             android:screenOrientation="portrait"/>
     </application>
 

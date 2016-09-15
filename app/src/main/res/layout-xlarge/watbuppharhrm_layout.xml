@@ -4,13 +4,37 @@
     android:id="@+id/tabhost"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    tools:context=".indexactivity.page.watrat.WatbangnamchonActivity">
+    tools:context=".indexactivity.page.phaaramluang.WatbuppharhrmActivity">
 
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="#d2be85" >
 
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="WATTHAI"
+            android:textColor="@color/black"
+            android:textSize="60dp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:background="@drawable/ic_backspace_orange_50_18dp"
+            android:layout_alignParentLeft="true" />
+
+    </RelativeLayout>
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="80dp"
         android:orientation="vertical">
 
         <TabWidget
@@ -26,7 +50,7 @@
             android:layout_height="match_parent">
 
             <LinearLayout
-                android:id="@+id/detail6"
+                android:id="@+id/detail18"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
@@ -36,37 +60,38 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <WebView
-                    android:id="@+id/webViewn6"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    />
+                        <WebView
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/webViewn18"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            />
             </LinearLayout>
 
             </LinearLayout>
 
             <RelativeLayout
-                android:id="@+id/map6"
+                android:id="@+id/map18"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:background="@drawable/map">
 
                 <ImageButton
-                    android:id="@+id/btn_watbangnamchonmap"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:id="@+id/btn_watbuppharhrmmap"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
                     android:src="@drawable/ic_menu_mylocation"
                     android:alpha="0.7"
                     android:layout_centerHorizontal="true"
                     android:layout_below="@+id/textView5"
-                    android:layout_alignStart="@+id/btn_watbangnamchonmaplocation"/>
+                    android:layout_alignStart="@+id/btn_watbuppharhrmmaplocation"/>
 
                 <ImageButton
-                    android:id="@+id/btn_watbangnamchonmaplocation"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginBottom="95dp"
+                    android:id="@+id/btn_watbuppharhrmmaplocation"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginBottom="220dp"
                     android:src="@drawable/ic_menu_directions"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
@@ -78,9 +103,10 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="ตรวจสอบพิกัด"
                     android:id="@+id/textView5"
+                    android:textSize="@dimen/h1"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="42dp" />
+                    android:layout_marginTop="150dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -88,6 +114,7 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="ออกเดินทาง"
                     android:id="@+id/textView6"
+                    android:textSize="@dimen/h1"
                     android:layout_centerVertical="true"
                     android:layout_centerHorizontal="true" />
 
@@ -95,32 +122,5 @@
 
         </FrameLayout>
     </LinearLayout>
-
-    <RelativeLayout
-        android:id="@+id/relativeLayout1"
-        android:layout_width="fill_parent"
-        android:layout_height="40dp"
-        android:background="#d2be85" >
-
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:text="WATTHAI"
-            android:textColor="@color/black"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:typeface="serif" />
-        <ImageButton
-            android:id="@+id/back"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_backspace_orange_50_18dp"
-            android:background="#d2be85"
-            android:layout_alignParentLeft="true" />
-
-    </RelativeLayout>
 
 </TabHost>

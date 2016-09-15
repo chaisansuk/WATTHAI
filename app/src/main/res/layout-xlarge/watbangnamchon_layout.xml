@@ -10,14 +10,13 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="80dp"
         android:orientation="vertical">
 
         <TabWidget
             android:id="@android:id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
         </TabWidget>
 
         <FrameLayout
@@ -54,8 +53,8 @@
 
                 <ImageButton
                     android:id="@+id/btn_watbangnamchonmap"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
                     android:src="@drawable/ic_menu_mylocation"
                     android:alpha="0.7"
                     android:layout_centerHorizontal="true"
@@ -64,9 +63,9 @@
 
                 <ImageButton
                     android:id="@+id/btn_watbangnamchonmaplocation"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginBottom="95dp"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginBottom="220dp"
                     android:src="@drawable/ic_menu_directions"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
@@ -78,9 +77,10 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="ตรวจสอบพิกัด"
                     android:id="@+id/textView5"
+                    android:textSize="@dimen/h1"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="42dp" />
+                    android:layout_marginTop="150dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -88,6 +88,7 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="ออกเดินทาง"
                     android:id="@+id/textView6"
+                    android:textSize="@dimen/h1"
                     android:layout_centerVertical="true"
                     android:layout_centerHorizontal="true" />
 
@@ -99,7 +100,7 @@
     <RelativeLayout
         android:id="@+id/relativeLayout1"
         android:layout_width="fill_parent"
-        android:layout_height="40dp"
+        android:layout_height="80dp"
         android:background="#d2be85" >
 
         <TextView
@@ -110,15 +111,14 @@
             android:layout_centerVertical="true"
             android:text="WATTHAI"
             android:textColor="@color/black"
-            android:textSize="30dp"
+            android:textSize="60dp"
             android:textStyle="bold"
             android:typeface="serif" />
         <ImageButton
             android:id="@+id/back"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_backspace_orange_50_18dp"
-            android:background="#d2be85"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:background="@drawable/ic_backspace_orange_50_18dp"
             android:layout_alignParentLeft="true" />
 
     </RelativeLayout>

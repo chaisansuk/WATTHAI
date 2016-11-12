@@ -59,9 +59,8 @@ public class WatwararmartayaphanthasarrararmActivity extends Activity {
 
             @Override
             public void onClick(View view) {
-                String lat = "13.719772";
-                String lng = "100.470898";
-                String strUri = "http://maps.google.com/maps?q=loc:" + lat + "," + lng + " (" + "วัดวรามาตยภัณฑสาราราม" + ")";
+                String latlng = "วัดวรามาตยภัณฑสาราราม เขต ธนบุรี กรุงเทพมหานคร 10600";
+                String strUri = "http://maps.google.com/maps?q=loc:" + latlng + " (" + "วัดวรามาตยภัณฑสาราราม" + ")";
                 Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(strUri));
                 intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
                 startActivity(intent);

@@ -52,16 +52,15 @@ public class WatbukkarowActivity extends Activity {
                 i.putExtra("Lat", 13.718941);
                 i.putExtra("Lng", 100.479304);
                 i.putExtra("Title", "วัดบุคคโล");
-                i.putExtra("Detail", "วัดราษฏร์, 13.699800, 100.488770");
+                i.putExtra("Detail", "วัดราษฏร์, พิกัด 13.699800, 100.488770");
                 startActivity(i);
             }
         }); btn_watbukkarowmaplocation.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                String lat = "13.699800";
-                String lng = "100.488770";
-                String strUri = "http://maps.google.com/maps?q=loc:" + lat + "," + lng + " (" + "วัดบุคคโล" + ")";
+                String latlng = "วัดบุคคโล เขต ธนบุรี กรุงเทพมหานคร 10600";
+                String strUri = "http://maps.google.com/maps?q=loc:" + latlng + " (" + "วัดบุคคโล เขต ธนบุรี กรุงเทพมหานคร 10600" + ")";
                 Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(strUri));
                 intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
                 startActivity(intent);

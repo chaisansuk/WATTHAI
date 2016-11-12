@@ -59,9 +59,8 @@ public class WatdowkanorngActivity extends Activity {
 
             @Override
             public void onClick(View view) {
-                String lat = "13.695921";
-                String lng = "100.488491";
-                String strUri = "http://maps.google.com/maps?q=loc:" + lat + "," + lng + " (" + "วัดดาวคนอง" + ")";
+                String latlng = "วัดดาวคะนอง เขต ธนบุรี กรุงเทพมหานคร 10600";
+                String strUri = "http://maps.google.com/maps?q=loc:" + latlng + " (" + "วัดดาวคะนอง เขต ธนบุรี กรุงเทพมหานคร 10600" + ")";
                 Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(strUri));
                 intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
                 startActivity(intent);

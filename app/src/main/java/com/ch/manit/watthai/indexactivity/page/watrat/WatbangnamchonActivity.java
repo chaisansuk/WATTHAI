@@ -49,10 +49,10 @@ public class WatbangnamchonActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), MapsActivity.class);
-                i.putExtra("Lat", 13.704214);
-                i.putExtra("Lng", 100.490526);
+                i.putExtra("Lat", 13.704237);
+                i.putExtra("Lng", 100.490534);
                 i.putExtra("Title", "วัดบางน้ำชน");
-                i.putExtra("Detail", "วัดราษฏร์,13.704214, 100.490526");
+                i.putExtra("Detail", "วัดราษฏร์, พิกัด 13.704234, 100.490545");
                 startActivity(i);
             }
         });
@@ -60,9 +60,8 @@ public class WatbangnamchonActivity extends Activity {
 
             @Override
             public void onClick(View view) {
-                String lat = "13.704214";
-                String lng = "100.490526";
-                String strUri = "http://maps.google.com/maps?q=loc:" + lat + "," + lng + " (" + "วัดบางน้ำชน" + ")";
+                String latlng = "วัดบางน้ำชน เขต ธนบุรี กรุงเทพมหานคร";
+                String strUri = "http://maps.google.com/maps?q=loc:" + latlng + " (" + "วัดบางน้ำชน" + ")";
                 Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(strUri));
                 intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
                 startActivity(intent);

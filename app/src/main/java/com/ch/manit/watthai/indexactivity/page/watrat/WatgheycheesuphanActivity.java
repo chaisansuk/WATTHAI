@@ -27,7 +27,7 @@ public class WatgheycheesuphanActivity extends Activity{
         tabHost.setup ( );
 
         TabHost.TabSpec tab_detail = tabHost.newTabSpec ("DEATAIL");
-        tab_detail.setIndicator ("ความเป็นมา");
+        tab_detail.setIndicator ("ประวัติ");
         tab_detail.setContent (R.id.detail0);
         tabHost.addTab (tab_detail);
         WebView webView = (WebView) findViewById(R.id.webViewn0);
@@ -39,8 +39,15 @@ public class WatgheycheesuphanActivity extends Activity{
         tab_map.setContent (R.id.map0);
         tabHost.addTab (tab_map);
 
+        TabHost.TabSpec tab_news = tabHost.newTabSpec ("NEWS");
+        tab_news.setIndicator ("ข่าวสาร");
+        tab_news.setContent (R.id.news0);
+        tabHost.addTab (tab_news);
+
+
         TabWidget tabWidget = tabHost.getTabWidget ();
         tabWidget.setEnabled (true);//endtabhost
+
 
         ImageButton btn_watgheycheesuphanmap = (ImageButton) findViewById(R.id.btn_watgheycheesuphanmap);
         ImageButton btn_watgheycheesuphanmaplocation = (ImageButton) findViewById(R.id.btn_watgheycheesuphanmaplocation);
@@ -50,10 +57,10 @@ public class WatgheycheesuphanActivity extends Activity{
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), MapsActivity.class);
-                i.putExtra("Lat", 13.719178);
-                i.putExtra("Lng", 100.485974);
+                i.putExtra("Lat", 13.729771);
+                i.putExtra("Lng", 100.488543);
                 i.putExtra("Title", "วัดใหญ่ศรีสุพรรณ");
-                i.putExtra("Detail", "วัดราษฏร์,13.719178, 100.485974");
+                i.putExtra("Detail", "วัดราษฏร์,13.729771, 100.488543");
                 startActivity(i);
             }
         });
@@ -61,9 +68,8 @@ public class WatgheycheesuphanActivity extends Activity{
         btn_watgheycheesuphanmaplocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String lat = "13.719178";
-                String lng = "100.485974";
-                String strUri = "http://maps.google.com/maps?q=loc:" + lat + "," + lng + " (" + "วัดใหญ่ศรีสุพรรณ" + ")";
+                String latlng = "วัดใหญ่ศรีสุพรรณ เขต ธนบุรี กรุงเทพมหานคร 10600";
+                String strUri = "http://maps.google.com/maps?q=loc:" + latlng + " (" + "วัดใหญ่ศรีสุพรรณ เขต ธนบุรี กรุงเทพมหานคร 10600" + ")";
                 Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(strUri));
                 intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
                 startActivity(intent);

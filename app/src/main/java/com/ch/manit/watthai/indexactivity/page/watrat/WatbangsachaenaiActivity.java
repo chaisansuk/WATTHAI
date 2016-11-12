@@ -49,10 +49,10 @@ public class WatbangsachaenaiActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), MapsActivity.class);
-                i.putExtra("Lat", 13.711757);
-                i.putExtra("Lng", 100.475893);
+                i.putExtra("Lat", 13.711979);
+                i.putExtra("Lng", 100.475881);
                 i.putExtra("Title", "วัดบางสะแกใน");
-                i.putExtra("Detail", "วัดราษฏร์, 13.711757, 100.475893");
+                i.putExtra("Detail", "วัดราษฏร์, พิกัด 13.711979, 100.475881");
                 startActivity(i);
             }
         });
@@ -60,9 +60,8 @@ public class WatbangsachaenaiActivity extends Activity {
 
             @Override
             public void onClick(View view) {
-                String lat = "13.711757";
-                String lng = "100.475893";
-                String strUri = "http://maps.google.com/maps?q=loc:" + lat + "," + lng + " (" + "วัดบางสะแกใน" + ")";
+                String latlng = "วัดบางสะแกใน เขต ธนบุรี กรุงเทพมหานคร";
+                String strUri = "http://maps.google.com/maps?q=loc:" + latlng + " (" + "วัดบางสะแกใน" + ")";
                 Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(strUri));
                 intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
                 startActivity(intent);

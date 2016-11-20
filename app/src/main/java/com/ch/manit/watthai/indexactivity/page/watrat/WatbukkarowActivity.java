@@ -12,6 +12,8 @@ import android.widget.TabWidget;
 
 import com.ch.manit.watthai.R;
 import com.ch.manit.watthai.indexactivity.map.MapsActivity;
+import com.ch.manit.watthai.indexactivity.page.news.NewsActivity;
+import com.ch.manit.watthai.indexactivity.page.news.NewsWatn9Activity;
 
 
 public class WatbukkarowActivity extends Activity {
@@ -38,11 +40,18 @@ public class WatbukkarowActivity extends Activity {
         tab_map.setContent (R.id.map9);
         tabHost.addTab (tab_map);
 
+        TabHost.TabSpec tab_news = tabHost.newTabSpec ("NEWS");
+        tab_news.setIndicator ("ข่าวสาร");
+        tab_news.setContent (R.id.news9);
+        tabHost.addTab (tab_news);
+
         TabWidget tabWidget = tabHost.getTabWidget ();
         tabWidget.setEnabled (true);//endtabhost
 
         ImageButton btn_watbukkarowmap = (ImageButton) findViewById(R.id.btn_watbukkarowmap);
         ImageButton btn_watbukkarowmaplocation = (ImageButton) findViewById(R.id.btn_watbukkarowmaplocation);
+        ImageButton btn_watbukkarownews = (ImageButton) findViewById(R.id.btn_watbukkarownews);
+        ImageButton btn_watbukkarownewswat = (ImageButton) findViewById(R.id.btn_watbukkarownewswat);
 
         btn_watbukkarowmap.setOnClickListener(new View.OnClickListener() {
 
@@ -66,7 +75,21 @@ public class WatbukkarowActivity extends Activity {
                 startActivity(intent);
             }
         });
+        btn_watbukkarownews.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), NewsActivity.class);
+                startActivity(i);
+            }
+        });
 
+        btn_watbukkarownewswat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), NewsWatn9Activity.class);
+                startActivity(i);
+            }
+        });
         back.setOnClickListener(new View.OnClickListener() {
 
             @Override

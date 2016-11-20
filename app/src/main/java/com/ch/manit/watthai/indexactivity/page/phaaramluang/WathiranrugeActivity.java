@@ -12,6 +12,9 @@ import android.widget.TabWidget;
 
 import com.ch.manit.watthai.R;
 import com.ch.manit.watthai.indexactivity.map.MapsActivity;
+import com.ch.manit.watthai.indexactivity.page.news.NewsActivity;
+import com.ch.manit.watthai.indexactivity.page.news.NewsWatn22Activity;
+import com.ch.manit.watthai.indexactivity.page.news.NewsWatn23Activity;
 
 
 public class WathiranrugeActivity extends Activity {
@@ -39,11 +42,18 @@ public class WathiranrugeActivity extends Activity {
         tab_map.setContent (R.id.map23);
         tabHost.addTab (tab_map);
 
+        TabHost.TabSpec tab_news = tabHost.newTabSpec ("NEWS");
+        tab_news.setIndicator ("ข่าวสาร");
+        tab_news.setContent (R.id.news23);
+        tabHost.addTab (tab_news);
+
         TabWidget tabWidget = tabHost.getTabWidget ();
         tabWidget.setEnabled (true);//endtabhost
 
         ImageButton btn_wathiranrugemap = (ImageButton) findViewById(R.id.btn_wathiranrugemap);
         ImageButton btn_wathiranrugemaplocation = (ImageButton) findViewById(R.id.btn_wathiranrugemaplocation);
+        ImageButton btn_wathiranrugenews = (ImageButton) findViewById(R.id.btn_wathiranrugenews);
+        ImageButton btn_wathiranrugenewswat = (ImageButton) findViewById(R.id.btn_wathiranrugenewswat);
 
         btn_wathiranrugemap.setOnClickListener(new View.OnClickListener() {
 
@@ -68,7 +78,21 @@ public class WathiranrugeActivity extends Activity {
                 startActivity(intent);
             }
         });
+        btn_wathiranrugenews.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), NewsActivity.class);
+                startActivity(i);
+            }
+        });
 
+        btn_wathiranrugenewswat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), NewsWatn23Activity.class);
+                startActivity(i);
+            }
+        });
         back.setOnClickListener(new View.OnClickListener() {
 
             @Override

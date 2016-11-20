@@ -12,6 +12,9 @@ import android.widget.TabWidget;
 
 import com.ch.manit.watthai.R;
 import com.ch.manit.watthai.indexactivity.map.MapsActivity;
+import com.ch.manit.watthai.indexactivity.page.news.NewsActivity;
+import com.ch.manit.watthai.indexactivity.page.news.NewsWatn10Activity;
+
 
 public class WatphadittharramActivity extends Activity {
     /** Called when the activity is first created. */
@@ -38,11 +41,18 @@ public class WatphadittharramActivity extends Activity {
         tab_map.setContent (R.id.map10);
         tabHost.addTab (tab_map);
 
+        TabHost.TabSpec tab_news = tabHost.newTabSpec ("NEWS");
+        tab_news.setIndicator ("ข่าวสาร");
+        tab_news.setContent (R.id.news10);
+        tabHost.addTab (tab_news);
+
         TabWidget tabWidget = tabHost.getTabWidget ();
         tabWidget.setEnabled (true);//endtabhost
 
         ImageButton btn_watphadittharrammap = (ImageButton) findViewById(R.id.btn_watphadittharrammap);
         ImageButton btn_watphadittharrammaplocation = (ImageButton) findViewById(R.id.btn_watphadittharrammaplocation);
+        ImageButton btn_watphadittharramnews = (ImageButton) findViewById(R.id.btn_watphadittharramnews);
+        ImageButton btn_watphadittharramnewswat = (ImageButton) findViewById(R.id.btn_watphadittharramnewswat);
 
         btn_watphadittharrammap.setOnClickListener(new View.OnClickListener() {
 
@@ -68,7 +78,21 @@ public class WatphadittharramActivity extends Activity {
                 startActivity(intent);
             }
         });
+        btn_watphadittharramnews.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), NewsActivity.class);
+                startActivity(i);
+            }
+        });
 
+        btn_watphadittharramnewswat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), NewsWatn10Activity.class);
+                startActivity(i);
+            }
+        });
 
         back.setOnClickListener(new View.OnClickListener() {
 

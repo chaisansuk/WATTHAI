@@ -12,6 +12,9 @@ import android.widget.TabWidget;
 
 import com.ch.manit.watthai.R;
 import com.ch.manit.watthai.indexactivity.map.MapsActivity;
+import com.ch.manit.watthai.indexactivity.page.news.NewsActivity;
+import com.ch.manit.watthai.indexactivity.page.news.NewsWatn16Activity;
+import com.ch.manit.watthai.indexactivity.page.news.NewsWatn17Activity;
 
 public class WatjantarrarmvoraviharnActivity extends Activity {
 
@@ -38,11 +41,18 @@ public class WatjantarrarmvoraviharnActivity extends Activity {
         tab_map.setContent (R.id.map17);
         tabHost.addTab (tab_map);
 
+        TabHost.TabSpec tab_news = tabHost.newTabSpec ("NEWS");
+        tab_news.setIndicator ("ข่าวสาร");
+        tab_news.setContent (R.id.news17);
+        tabHost.addTab (tab_news);
+
         TabWidget tabWidget = tabHost.getTabWidget ();
         tabWidget.setEnabled (true);//endtabhost
 
         ImageButton btn_watjantarrarmvoraviharnmap = (ImageButton) findViewById(R.id.btn_watjantarrarmvoraviharnmap);
         ImageButton btn_watjantarrarmvoraviharnmaplocation = (ImageButton) findViewById(R.id.btn_watjantarrarmvoraviharnmaplocation);
+        ImageButton btn_watjantarrarmvoraviharnnews = (ImageButton) findViewById(R.id.btn_watjantarrarmvoraviharnnews);
+        ImageButton btn_watjantarrarmvoraviharnnewswat = (ImageButton) findViewById(R.id.btn_watjantarrarmvoraviharnnewswat);
 
         btn_watjantarrarmvoraviharnmap.setOnClickListener(new View.OnClickListener() {
 
@@ -65,6 +75,21 @@ public class WatjantarrarmvoraviharnActivity extends Activity {
                 Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(strUri));
                 intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
                 startActivity(intent);
+            }
+        });
+        btn_watjantarrarmvoraviharnnews.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), NewsActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btn_watjantarrarmvoraviharnnewswat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), NewsWatn17Activity.class);
+                startActivity(i);
             }
         });
         back.setOnClickListener(new View.OnClickListener() {

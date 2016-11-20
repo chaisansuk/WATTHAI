@@ -12,6 +12,8 @@ import android.widget.TabWidget;
 
 import com.ch.manit.watthai.R;
 import com.ch.manit.watthai.indexactivity.map.MapsActivity;
+import com.ch.manit.watthai.indexactivity.page.news.NewsActivity;
+import com.ch.manit.watthai.indexactivity.page.news.NewsWatActivity;
 
 
 public class WatgheycheesuphanActivity extends Activity{
@@ -51,6 +53,9 @@ public class WatgheycheesuphanActivity extends Activity{
 
         ImageButton btn_watgheycheesuphanmap = (ImageButton) findViewById(R.id.btn_watgheycheesuphanmap);
         ImageButton btn_watgheycheesuphanmaplocation = (ImageButton) findViewById(R.id.btn_watgheycheesuphanmaplocation);
+        ImageButton btn_watgheycheesuphannews = (ImageButton) findViewById(R.id.btn_watgheycheesuphannews);
+        ImageButton btn_watgheycheesuphannewswat = (ImageButton) findViewById(R.id.btn_watgheycheesuphannewswat);
+
 
         btn_watgheycheesuphanmap.setOnClickListener(new View.OnClickListener() {
 
@@ -76,6 +81,21 @@ public class WatgheycheesuphanActivity extends Activity{
             }
         });
 
+        btn_watgheycheesuphannews.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), NewsActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btn_watgheycheesuphannewswat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), NewsWatActivity.class);
+                startActivity(i);
+            }
+        });
         back.setOnClickListener(new View.OnClickListener() {
 
             @Override

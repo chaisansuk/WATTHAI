@@ -12,6 +12,9 @@ import android.widget.TabWidget;
 
 import com.ch.manit.watthai.R;
 import com.ch.manit.watthai.indexactivity.map.MapsActivity;
+import com.ch.manit.watthai.indexactivity.page.news.NewsActivity;
+import com.ch.manit.watthai.indexactivity.page.news.NewsWatn21Activity;
+import com.ch.manit.watthai.indexactivity.page.news.NewsWatn22Activity;
 
 public class WatweyrurachinActivity extends Activity {
     /** Called when the activity is first created. */
@@ -37,11 +40,18 @@ public class WatweyrurachinActivity extends Activity {
         tab_map.setContent (R.id.map22);
         tabHost.addTab (tab_map);
 
+        TabHost.TabSpec tab_news = tabHost.newTabSpec ("NEWS");
+        tab_news.setIndicator ("ข่าวสาร");
+        tab_news.setContent (R.id.news22);
+        tabHost.addTab (tab_news);
+
         TabWidget tabWidget = tabHost.getTabWidget ();
         tabWidget.setEnabled (true);//endtabhost
 
         ImageButton btn_watweyrurachinmap = (ImageButton) findViewById(R.id.btn_watweyrurachinmap);
         ImageButton btn_watweyrurachinmaplocation = (ImageButton) findViewById(R.id.btn_watweyrurachinmaplocation);
+        ImageButton btn_watweyrurachinnews = (ImageButton) findViewById(R.id.btn_watweyrurachinnews);
+        ImageButton btn_watweyrurachinnewswat = (ImageButton) findViewById(R.id.btn_watweyrurachinnewswat);
 
         btn_watweyrurachinmap.setOnClickListener(new View.OnClickListener() {
 
@@ -66,7 +76,21 @@ public class WatweyrurachinActivity extends Activity {
                 startActivity(intent);
             }
         });
+        btn_watweyrurachinnews.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), NewsActivity.class);
+                startActivity(i);
+            }
+        });
 
+        btn_watweyrurachinnewswat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), NewsWatn22Activity.class);
+                startActivity(i);
+            }
+        });
 
         back.setOnClickListener(new View.OnClickListener() {
 

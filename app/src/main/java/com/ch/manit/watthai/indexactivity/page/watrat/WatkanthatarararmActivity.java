@@ -12,6 +12,8 @@ import android.widget.TabWidget;
 
 import com.ch.manit.watthai.R;
 import com.ch.manit.watthai.indexactivity.map.MapsActivity;
+import com.ch.manit.watthai.indexactivity.page.news.NewsActivity;
+import com.ch.manit.watthai.indexactivity.page.news.NewsWatn4Activity;
 
 
 public class WatkanthatarararmActivity extends Activity {
@@ -38,11 +40,18 @@ public class WatkanthatarararmActivity extends Activity {
         tab_map.setContent (R.id.map4);
         tabHost.addTab (tab_map);
 
+        TabHost.TabSpec tab_news = tabHost.newTabSpec ("NEWS");
+        tab_news.setIndicator ("ข่าวสาร");
+        tab_news.setContent (R.id.news4);
+        tabHost.addTab (tab_news);
+
         TabWidget tabWidget = tabHost.getTabWidget ();
         tabWidget.setEnabled (true);//endtabhost
 
         ImageButton btn_watkanthatarararmmap = (ImageButton) findViewById(R.id.btn_watkanthatarararmmap);
         ImageButton btn_watkanthatarararmmaplocation = (ImageButton) findViewById(R.id.btn_watkanthatarararmmaplocation);
+        ImageButton btn_watkanthatarararmnews = (ImageButton) findViewById(R.id.btn_watkanthatarararmnews);
+        ImageButton btn_watkanthatarararmnewswat = (ImageButton) findViewById(R.id.btn_watkanthatarararmnewswat);
 
         btn_watkanthatarararmmap.setOnClickListener(new View.OnClickListener() {
 
@@ -65,6 +74,22 @@ public class WatkanthatarararmActivity extends Activity {
                 Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(strUri));
                 intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
                 startActivity(intent);
+            }
+        });
+
+        btn_watkanthatarararmnews.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), NewsActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btn_watkanthatarararmnewswat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), NewsWatn4Activity.class);
+                startActivity(i);
             }
         });
 

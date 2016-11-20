@@ -92,7 +92,50 @@
                     android:layout_centerHorizontal="true" />
 
             </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/news6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/map">
+                <ImageButton
+                    android:id="@+id/btn_watbangnamchonnews"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/news1"
+                    android:alpha="0.7"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/textView00"
+                    android:layout_alignStart="@+id/btn_watbangnamchonnewswat"/>
 
+                <ImageButton
+                    android:id="@+id/btn_watbangnamchonnewswat"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="95dp"
+                    android:src="@drawable/news1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:alpha="0.7" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="ข่าวสารทั่วไปทางพุทธศาสนา"
+                    android:id="@+id/textView00"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="42dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="ข่าวสารจากทางวัด"
+                    android:id="@+id/textView11"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
         </FrameLayout>
     </LinearLayout>
 
